@@ -1,0 +1,9 @@
+.main-content  {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 30px;
+    padding: 12px;
+    width: 530px;
+}

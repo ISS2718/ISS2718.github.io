@@ -1,0 +1,11 @@
+:root {
+    /* FONT */
+    --font-dm-sans: "DM Sans", sans-serif;
+    
+    /* COLORS */
+    --color-bg-page: #2F333D;
+    --color-h1: #E5C07B;
+    --color-h2: #d19a66;;
+    --color-text-navgaition: #E06C75;
+    --color-border: #D9D9D9;
+}
