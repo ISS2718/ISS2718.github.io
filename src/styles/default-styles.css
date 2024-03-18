@@ -1,4 +1,10 @@
 body {
     background-color: var(--color-bg-page);
     font-family: var(--font-dm-sans);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
 }

@@ -4,8 +4,15 @@
     
     /* COLORS */
     --color-bg-page: #2F333D;
+    --color-bg-main-container-section-border: #282C34;
+    --color-bg-main-container-section-content: #383E4A;
     --color-h1: #E5C07B;
     --color-h2: #d19a66;;
     --color-text-navgaition: #E06C75;
+    --color-text-main-content: #abb2bf;
+    --color-text-footer: #98C379;
     --color-border: #D9D9D9;
+    --color-circle1: #E06C75;
+    --color-circle2: #E5C07B;
+    --color-circle3: #98C379;
 }

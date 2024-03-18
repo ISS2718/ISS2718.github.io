@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./src/styles/vars.css">
     <link rel="stylesheet" href="./src/styles/default-styles.css.css">
     <link rel="stylesheet" href="./src/styles/sidebar.css">
-    <link rel="stylesheet" href="./src/styles/main-content.css">
+    <link rel="stylesheet" href="./src/styles/main-container.css">
     <link rel="stylesheet" href="./src/styles/footer.css">
 
     <!-- Links para trazer os ícones via CDN -->
@@ -27,12 +27,12 @@
 </head>
 <body>
     <!-- "Sidebar" -->
-    <div class="sidebar">
-        <header class="sidebar__header">
+    <header class="sidebar">
+        <div class="sidebar__header">
             <img src="https://media.licdn.com/dms/image/D4D03AQFyRF87TRGc0A/profile-displayphoto-shrink_800_800/0/1706475455779?e=1715817600&v=beta&t=ZbLLREVDJ5-T2s2CJC3jGSvbEOw34XT7TUE_rBGlpbg" alt="Isaac's photo">
             <h1>Isaac Santos Soares</h1>
             <h2>Computer Engineering Student</h2>
-        </header>
+        </div>
         <nav class="sidebar__navigation">
             <ul>
                 <li><a href=""><span class="fa fa-minus"></span><span>About</span></a></li>
@@ -57,37 +57,61 @@
                 </li>
             </ul>
         </div>
-    </div>
+    </header>
     <!-- Main Content -->
-    <main class="main-content">
-        <!-- About -->
-        <section>
-            <h1>About</h1>
-            <p>My name is Isaac Soares, I'm a computer engineering student at the São Paulo University. I'm passionate about technology and I'm always looking for new challenges and opportunities to learn and grow.</p>
-        </section>
-        <!-- Projetcts -->
-        <section>
-            <h1>Projects</h1>
-            <div>
-                <ul>
-                    <li>
-                        <h2>Project 1</h2>
-                        <p>Project 1 description</p>
-                    </li>
-                    <li>
-                        <h2>Project 2</h2>
-                        <p>Project 2 description</p>
-                    </li>
-                    <li>
-                        <h2>Project 3</h2>
-                        <p>Project 3 description</p>
-                    </li>
-                </ul>
-            </div>
-            <a href="https://github.com/ISS2718?tab=repositories">
-                <span>View my Projects on GitHub</span>
-            </a>
-        </section>
+    <main class="main-container">
+        <div class="offer__scroll-container">
+            <!-- About -->
+            <section class="about">
+                <div class="section__header">
+                    <div class="section__header_circles">
+                        <span class="fa fa-circle circle-color1"></span>
+                        <span class="fa fa-circle circle-color2"></span>
+                        <span class="fa fa-circle circle-color3"></span>
+                    </div>
+                    <div class="section__header__title">
+                        <span>About</span>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <p>
+                        My name is Isaac Soares, I'm a computer engineering student at the São Paulo University. 
+                        I'm passionate about technology and I'm always looking for new challenges and opportunities 
+                        to learn and grow.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Projetcts -->
+            <section class="projects">
+                <div class="section__header">
+                    <div class="section__header_circles">
+                        <span class="fa fa-circle circle-color1"></span>
+                        <span class="fa fa-circle circle-color2"></span>
+                        <span class="fa fa-circle circle-color3"></span>
+                    </div>
+                    <div class="section__header__title">
+                        <span>Projects</span>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <ul>
+                        <li>
+                            <span>Project 1</span>
+                            <span>Project 1 description</span>
+                        </li>
+                        <li>
+                            <span>Project 2</span>
+                            <span>Project 2 description</span>
+                        </li>
+                        <li>
+                            <span>Project 3</span>
+                            <span>Project 3 description</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         ©2024 Isaac Soares
