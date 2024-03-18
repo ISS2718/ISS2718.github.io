@@ -4,4 +4,6 @@ footer {
     right: 0;
 
     color: var(--color-text-footer);
+
+    padding: 5px 10px;
 }
