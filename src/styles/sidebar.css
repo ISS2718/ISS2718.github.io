@@ -61,6 +61,10 @@
     gap: 10px;   
 }
 
+.sidebar__navigation li a:hover .fa {
+    transform: scaleX(2);
+}
+
 .sidebar__contacts {
     margin: 20px 0 0 0;
 }
