@@ -1,6 +1,6 @@
 .project-cards {
     position: relative;
-    left: 15%;
+    left: 12.5%;
 
     width: var(--project-cards-width);
     height: var(--project-cards-height);
@@ -13,14 +13,105 @@
     align-items: center;
 }
 
-.project-cards__img img {
+.project-cards__header {
+    display: flex;
+    flex-direction: column;
+    width: var(--project-cards-width);
+}
+
+.project-cards__header-repo-icon {
+    padding: 10px;
+}
+
+.project-cards__header-repo-icon a {
+    color: var(--color-project-cards-repo-book-icon);
+}
+
+a:hover .fa {
+    transform: scale(1.3);
+}
+
+.project-cards__header-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: var(--project-cards-img-height);
+    width: var(--project-cards-width);
+}
+
+.project-cards__header-title h1 {
+    font-family: var(--font-project-cards-header-title);
+    color: var(--color-project-cards-header-title);
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.project-cards__header-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-cards__header-img img {
     height: var(--project-cards-img-height);
     width: var(--project-cards-img-width);
-    margin: 10px;
     border-radius: var(--project-cards-img-border-radius);
 }
 
+.project-cards__techs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-cards h2 {
+    color: var(--color-h2);
+    font-size: small;
+    text-decoration: underline;
+    margin: 10px 0 0 0; 
+}
+
+.project-cards__techs-icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.project-cards__techs-icons svg {
+    height: var(--project-cards-techs-img-height);
+    width: var(--project-cards-techs-img-width);
+    margin: 5px 0 10px 0;
+    fill: var(--color-project-cards-techs-icons);
+}
+
 .project-cards__about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5px;
+    
     color: var(--color-text-main-content);
+    font-size: small;
+}
+
+.project-cards__about span {
+    text-align: justify;
+    padding: 0 60px;
+}
+
+.project-cards__footer {
+    margin: 30px 0 10px 0;
+}
+
+.project-cards__footer a {
+    color: var(--color-project-cards-footer);
+    text-decoration: none;
     font-size: small;
 }

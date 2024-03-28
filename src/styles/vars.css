@@ -1,6 +1,7 @@
 :root {
     /* FONT */
     --font-dm-sans: "DM Sans", sans-serif;
+    --font-project-cards-header-title: "Sixtyfour", sans-serif;
     
     /* COLORS */
     --color-bg-page: #2F333D;
@@ -15,9 +16,13 @@
     --color-circle1: #E06C75;
     --color-circle2: #E5C07B;
     --color-circle3: #98C379;
+    --color-project-cards-header-title: #61AFEF;
+    --color-project-cards-repo-book-icon: #D9D9D9;
+    --color-project-cards-techs-icons: #E06C75;
+    --color-project-cards-footer: #C678DD;
 
     /* "MACOS" VISUALISER SCROLL SIZE */
-    --macOS-visualiser-scroll-height: 450px;
+    --macOS-visualiser-scroll-height: 530px;
 
     /* "MACOS" WINDOW SIZES */
     --macOS-window-width: 600px;
@@ -33,15 +38,19 @@
 
     /* "MACOS" WINDOW CONTENT  SIZES */
     --macOS-window-content-width: 580px;
-    --macOS-window-content-height: 350px;
+    --macOS-window-content-height: 430px;
     
     /* PROJECT CARD SIZES*/
     --project-cards-width: 440px;
-    --project-cards-height: 325px;
+    --project-cards-height: 405px;
     --project-cards-border-radius: 10px;
 
+    /* PROJECT CARDS TECHS IMG SIZES*/
+    --project-cards-techs-img-height: 13px;
+    --project-cards-techs-img-width: 13px;
+
     /* PROJECT CARDS IMG  SIZES*/
-    --project-cards-img-width: 320px;
-    --project-cards-img-height: 160px;
+    --project-cards-img-width: 330px;
+    --project-cards-img-height: 170px;
     --project-cards-img-border-radius: 10px;
 }
