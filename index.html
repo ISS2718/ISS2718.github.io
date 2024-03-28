@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./src/styles/default-styles.css.css">
     <link rel="stylesheet" href="./src/styles/sidebar.css">
     <link rel="stylesheet" href="./src/styles/main-container.css">
+    <link rel="stylesheet" href="./src/styles/project-cards.css">
     <link rel="stylesheet" href="./src/styles/footer.css">
 
     <!-- Links para trazer os ícones via CDN -->
@@ -35,6 +36,7 @@
         </div>
         <nav class="sidebar__navigation">
             <ul>
+                <li><a href="#hello-section"><span class="fa fa-minus"></span><span>Hello</span></a></li>
                 <li><a href="#about-section"><span class="fa fa-minus"></span><span>About</span></a></li>
                 <li><a href="#project-section"><span class="fa fa-minus"></span><span>Projects</span></a></li>
             </ul>
@@ -95,20 +97,14 @@
                     </div>
                 </div>
                 <div class="section__content">
-                    <ul>
-                        <li>
-                            <span>Project 1</span>
-                            <span>Project 1 description</span>
-                        </li>
-                        <li>
-                            <span>Project 2</span>
-                            <span>Project 2 description</span>
-                        </li>
-                        <li>
-                            <span>Project 3</span>
-                            <span>Project 3 description</span>
-                        </li>
-                    </ul>
+                    <div class="project-cards">
+                        <div class="project-cards__img">
+                            <img src="src/assets/imgs/projects/LiveChat.png" alt="">
+                        </div>
+                        <div class="project-cards__about">
+                            <span>Live chat is</span>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>

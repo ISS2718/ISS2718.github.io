@@ -15,4 +15,33 @@
     --color-circle1: #E06C75;
     --color-circle2: #E5C07B;
     --color-circle3: #98C379;
+
+    /* "MACOS" VISUALISER SCROLL SIZE */
+    --macOS-visualiser-scroll-height: 450px;
+
+    /* "MACOS" WINDOW SIZES */
+    --macOS-window-width: 600px;
+    --macOS-window-border-radius: 10px;
+
+    /* "MACOS" WINDOW HEADER SIZES */
+    --macOS-window-header-margin: 10px 0;
+    --macOS-window-header-pading: 0 10px;
+    --macOS-window-header-title-font-size: 1.15rem;
+    --macOS-window-header-title-font-weight: 700;
+    --macOS-window-header-title-width: 522px;
+    --macOS-window-header-title-position: 35%;
+
+    /* "MACOS" WINDOW CONTENT  SIZES */
+    --macOS-window-content-width: 580px;
+    --macOS-window-content-height: 350px;
+    
+    /* PROJECT CARD SIZES*/
+    --project-cards-width: 440px;
+    --project-cards-height: 325px;
+    --project-cards-border-radius: 10px;
+
+    /* PROJECT CARDS IMG  SIZES*/
+    --project-cards-img-width: 320px;
+    --project-cards-img-height: 160px;
+    --project-cards-img-border-radius: 10px;
 }
