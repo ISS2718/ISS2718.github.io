@@ -68,7 +68,6 @@
 .project-cards h2 {
     color: var(--color-h2);
     font-size: small;
-    text-decoration: underline;
     margin: 10px 0 0 0; 
 }
 
