@@ -1,0 +1,107 @@
+.project-cards__carousel-limit {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+
+    width: var(--project-cards-carousel-limit-width);
+    height: var(--project-cards-carousel-limit-height);
+}
+
+.project-cards__carousel-limit input {
+    display: none;
+}
+
+.project-cards-carousel {
+    display: flex;
+    flex-direction: row;
+    width: var(--projet-cards-carousel-width);
+    height: var(--projet-cards-carousel-height);
+    
+    transition: .6s;
+}   
+
+.project-cards-carousel__nav {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    width: var(--project-cards-carousel-nav-width);
+    height: var(--project-cards-carousel-nav-height);
+
+    margin: 6px 0;
+}
+
+.project-cards-carousel__nav label {
+    cursor: pointer;
+
+    height: var(--project-cards-carousel-nav-bar-height);
+    width: var(--project-cards-carousel-nav-bar-width);
+
+    border: 1px solid var(--color-border-project-cards-nav-bar);
+    border-radius: 5px;
+
+    margin: 6px;
+
+    transition: .6s;
+}
+
+.project-cards-carousel__nav label:hover {
+    background-color: var(--color-bg-project-cards-nav-bar);
+}
+
+#project-card-1:checked ~ .project-cards-carousel {
+    margin-left: 0;
+}
+
+#project-card-2:checked ~ .project-cards-carousel {
+    margin-left: -100%;
+}
+
+#project-card-3:checked ~ .project-cards-carousel {
+    margin-left: -200%;
+}
+
+#project-card-4:checked ~ .project-cards-carousel {
+    margin-left: -300%;
+}
+
+#project-card-5:checked ~ .project-cards-carousel {
+    margin-left: -400.1%;
+}
+
+#project-card-6:checked ~ .project-cards-carousel {
+    margin-left: -500.1%;
+}
+
+#project-card-1:checked ~ nav #project-card-1-label {
+    background-color: var(--color-bg-project-cards-nav-bar);
+}
+
+#project-card-2:checked ~ nav #project-card-2-label {
+    background-color: var(--color-bg-project-cards-nav-bar);
+}
+
+#project-card-3:checked ~ nav #project-card-3-label {
+    background-color: var(--color-bg-project-cards-nav-bar);
+}
+
+#project-card-4:checked ~ nav #project-card-4-label {
+    background-color: var(--color-bg-project-cards-nav-bar);
+}
+
+#project-card-5:checked ~ nav #project-card-5-label {
+    background-color: var(--color-bg-project-cards-nav-bar);
+}
+
+#project-card-6:checked ~ nav #project-card-6-label {
+    background-color: var(--color-bg-project-cards-nav-bar);
+}
