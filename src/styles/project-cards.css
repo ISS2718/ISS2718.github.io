@@ -24,7 +24,7 @@
     color: var(--color-project-cards-repo-book-icon);
 }
 
-a:hover .fa {
+.project-cards a:hover .fa {
     transform: scale(1.3);
 }
 
@@ -33,8 +33,9 @@ a:hover .fa {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: var(--project-cards-img-height);
+
     width: var(--project-cards-width);
+    height: var(--project-cards-title-height);
 }
 
 .project-cards__header-title h1 {
@@ -81,8 +82,8 @@ a:hover .fa {
 }
 
 .project-cards__techs-icons svg {
-    height: var(--project-cards-techs-img-height);
-    width: var(--project-cards-techs-img-width);
+    height: var(--project-cards-techs-icon-height);
+    width: var(--project-cards-techs-icon-width);
     margin: 5px 0 0 0;
     fill: var(--color-project-cards-techs-icons);
 }

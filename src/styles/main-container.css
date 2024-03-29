@@ -34,7 +34,7 @@
     margin: 10px 0 0 0;
 }
 
-#project-section {
+.main-container section + section {
     margin: 60px 0 0 0;
 }
 

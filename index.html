@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./src/styles/sidebar.css">
     <link rel="stylesheet" href="./src/styles/main-container.css">
     <link rel="stylesheet" href="./src/styles/project-cards-carousel.css">
+    <link rel="stylesheet" href="./src/styles/project-cards-input.css">
+    <link rel="stylesheet" href="./src/styles/contributions-cards-input.css">
     <link rel="stylesheet" href="./src/styles/project-cards.css">
     <link rel="stylesheet" href="./src/styles/footer.css">
 
@@ -28,6 +30,7 @@
     integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap">
 </head>
 <body>
@@ -43,6 +46,7 @@
                 <li><a href="#hello-section"><span class="fa fa-minus"></span><span>Hello</span></a></li>
                 <li><a href="#about-section"><span class="fa fa-minus"></span><span>About</span></a></li>
                 <li><a href="#project-section"><span class="fa fa-minus"></span><span>Projects</span></a></li>
+                <li><a href="#contributions-section"><span class="fa fa-minus"></span><span>Contributions</span></a></li>
             </ul>
         </nav>
         <div class="sidebar__contacts">
@@ -111,6 +115,7 @@
                         <input type="radio" name="project-cards-carousel" id="project-card-4">
                         <input type="radio" name="project-cards-carousel" id="project-card-5">
                         <input type="radio" name="project-cards-carousel" id="project-card-6">
+                        <input type="radio" name="project-cards-carousel" id="project-card-7">
 
                         <!-- Project Cards Carousel -->
                         <div class="project-cards-carousel">
@@ -148,6 +153,7 @@
                                     </a>
                                 </div>
                             </div>
+
                             <!-- Space Invaders Project Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -175,13 +181,14 @@
                                     <h2>About</h2>
                                     <span>My version of Space Invaders, created as an assignment for the Object-Oriented Programming (SCC0604) course taught by Professor Robson Leonardo Ferreira Cordeiro, for the Computer Engineering program at USP São Carlos.</span>
                                 </div>
-                                <div class="project-cards__footer">
+                                <div style="margin-top: 15px;" class="project-cards__footer">
                                     <a href="https://github.com/ISS2718/SpaceInvaders" target="_blank">
                                         <span class="fa fa-code"></span>
                                         <span>go to repo</span>
                                     </a>
                                 </div>
                             </div>
+
                             <!-- SpotClone Project Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -224,6 +231,7 @@
                                     </a>
                                 </div>
                             </div>
+
                             <!-- Whisper.Driver Project Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -255,13 +263,14 @@
                                     <h2>About</h2>
                                     <span>Whisper.Driver is a Linux kernel module that reads user-pressed keys and communicates them to a server via TCP. Developed for the Operating Systems I (SSC0640) course at USP São Carlos, it aimed to study kernel module structure and permissions.</span>
                                 </div>
-                                <div class="project-cards__footer">
+                                <div style="margin-top: 10px;" class="project-cards__footer">
                                     <a href="https://github.com/ISS2718/Whisper.Driver" target="_blank">
                                         <span class="fa fa-code"></span>
                                         <span>go to repo</span>
                                     </a>
                                 </div>
                             </div>
+
                             <!-- Certification_NLW Project Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -305,6 +314,7 @@
                                     </a>
                                 </div>
                             </div>
+
                             <!-- Mestre Cuca Project Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -325,6 +335,7 @@
                                         <svg role="img" style="width: 25px; height: 25px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
                                         width="96.000000pt" height="96.000000pt" viewBox="0 0 96.000000 96.000000"
                                         preserveAspectRatio="xMidYMid meet">
+                                           <title>Assembly</title>
                                            <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
                                            stroke="none">
                                                <path d="M174 668 c-55 -95 -99 -180 -99 -188 0 -8 44 -93 99 -188 l98 -172
@@ -345,7 +356,7 @@
                                 </div>
                                 <div class="project-cards__about">
                                     <h2>About</h2>
-                                    <span>This project involves an assembly game designed for the ICMC processor, created as part of the SSC0902 Computer Organization and Architecture course taught by Professor Eduardo do Valle Simões.</span>
+                                    <span>This project involves an assembly game designed for the ICMC processor, created as part of the Computer Organization and Architecture (SSC0902) course taught by Professor Eduardo do Valle Simões.</span>
                                 </div>
                                 <div class="project-cards__footer">
                                     <a href="https://github.com/nicholasestevao/Jogo-OrgComp" target="_blank">
@@ -353,6 +364,11 @@
                                         <span>go to repo</span>
                                     </a>
                                 </div>
+                            </div>
+
+                            <!-- Go to GitHub Card -->
+                            <div class="project-cards">
+                                
                             </div>
                         </div>
 
@@ -364,6 +380,184 @@
                             <label for="project-card-4" id="project-card-4-label"></label>
                             <label for="project-card-5" id="project-card-5-label"></label>
                             <label for="project-card-6" id="project-card-6-label"></label>
+                            <label for="project-card-7" id="project-card-7-label"></label>
+                        </nav>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <!-- Projetcts -->
+            <section class="contribution" id="contributions-section">
+                <div class="section__header">
+                    <div class="section__header_circles">
+                        <span class="fa fa-circle circle-color1"></span>
+                        <span class="fa fa-circle circle-color2"></span>
+                        <span class="fa fa-circle circle-color3"></span>
+                    </div>
+                    <div style="left: 32%;" class="section__header__title">
+                        <span>Contributions</span>
+                    </div>
+                </div>
+                <div class="section__content">
+                    <div class="project-cards__carousel-limit">
+                        <!-- Project Cards Carousel Inputs -->
+                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-1" checked="">
+                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-2">
+                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-3">
+                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-4">
+
+                        <!-- Cotnribution Cards Carousel -->
+                        <div class="project-cards-carousel">
+                            <!-- goICMCsim Cotnribution Card -->
+                            <div class="project-cards">
+                                <div class="project-cards__header">
+                                    <div class="project-cards__header-repo-icon">
+                                        <a href="https://github.com/lucasgpulcinelli/goICMCsim" target="_blank">
+                                            <span class="fa fa-book"></span>
+                                        </a>
+                                    </div>
+                                    <div class="project-cards__header-img">
+                                        <img src="src/assets/imgs/projects/goICMCsim.jpeg" alt="goICMCsim Social Preview">
+                                    </div>
+                                </div>
+                                <div class="project-cards__techs">
+                                    <div class="project-cards__techs-title">
+                                        <h2>Techs</h2>
+                                    </div>
+                                    <div class="project-cards__techs-icons">
+                                        <svg style="width: 30px; height: 30px; margin: 0;" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <title>Go</title>
+                                            <path d="M1.811 10.231c-.047 0-.058-.023-.035-.059l.246-.315c.023-.035.081-.058.128-.058h4.172c.046 0 .058.035.035.07l-.199.303c-.023.036-.082.07-.117.07zM.047 11.306c-.047 0-.059-.023-.035-.058l.245-.316c.023-.035.082-.058.129-.058h5.328c.047 0 .07.035.058.07l-.093.28c-.012.047-.058.07-.105.07zm2.828 1.075c-.047 0-.059-.035-.035-.07l.163-.292c.023-.035.07-.07.117-.07h2.337c.047 0 .07.035.07.082l-.023.28c0 .047-.047.082-.082.082zm12.129-2.36c-.736.187-1.239.327-1.963.514-.176.046-.187.058-.34-.117-.174-.199-.303-.327-.548-.444-.737-.362-1.45-.257-2.115.175-.795.514-1.204 1.274-1.192 2.22.011.935.654 1.706 1.577 1.835.795.105 1.46-.175 1.987-.77.105-.13.198-.27.315-.434H10.47c-.245 0-.304-.152-.222-.35.152-.362.432-.97.596-1.274a.315.315 0 01.292-.187h4.253c-.023.316-.023.631-.07.947a4.983 4.983 0 01-.958 2.29c-.841 1.11-1.94 1.8-3.33 1.986-1.145.152-2.209-.07-3.143-.77-.865-.655-1.356-1.52-1.484-2.595-.152-1.274.222-2.419.993-3.424.83-1.086 1.928-1.776 3.272-2.02 1.098-.2 2.15-.07 3.096.571.62.41 1.063.97 1.356 1.648.07.105.023.164-.117.2m3.868 6.461c-1.064-.024-2.034-.328-2.852-1.029a3.665 3.665 0 01-1.262-2.255c-.21-1.32.152-2.489.947-3.529.853-1.122 1.881-1.706 3.272-1.95 1.192-.21 2.314-.095 3.33.595.923.63 1.496 1.484 1.648 2.605.198 1.578-.257 2.863-1.344 3.962-.771.783-1.718 1.273-2.805 1.495-.315.06-.63.07-.934.106zm2.78-4.72c-.011-.153-.011-.27-.034-.387-.21-1.157-1.274-1.81-2.384-1.554-1.087.245-1.788.935-2.045 2.033-.21.912.234 1.835 1.075 2.21.643.28 1.285.244 1.905-.07.923-.48 1.425-1.228 1.484-2.233z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="project-cards__about">
+                                    <h2 style="margin: 0;">About</h2>
+                                    <span>goICMCsim is a simulator for the ICMC architecture. I contributed by transferring the terminal errors into Error Dialogs, assisting in the modification of the file opening window, enhancing the visual identity of the program, and initiating documentation for the program.</span>
+                                </div>
+                                <div style="margin-top: 10px;" class="project-cards__footer">
+                                    <a href="https://github.com/lucasgpulcinelli/goICMCsim" target="_blank">
+                                        <span class="fa fa-code"></span>
+                                        <span>go to repo</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Faltei Cotnribution Card -->
+                            <div class="project-cards">
+                                <div class="project-cards__header">
+                                    <div class="project-cards__header-repo-icon">
+                                        <a href="https://github.com/ikuyorih9/Faltei" target="_blank">
+                                            <span class="fa fa-book"></span>
+                                        </a>
+                                    </div>
+                                    <div class="project-cards__header-title">
+                                        <h1>Faltei</h1>
+                                    </div>
+                                </div>
+                                <div class="project-cards__techs">
+                                    <div class="project-cards__techs-title">
+                                        <h2>Techs</h2>
+                                    </div>
+                                    <div class="project-cards__techs-icons">
+                                        <svg style="width:20px; height:20px;" role="img" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                                            <title>java</title>
+                                            <path d="M13.168 30.901c5.401 0.346 13.695-0.191 13.891-2.747 0 0-0.377 0.968-4.464 1.738-2.257 0.407-4.855 0.639-7.508 0.639-2.173 0-4.309-0.156-6.398-0.457l0.239 0.028c0-0.001 0.691 0.571 4.24 0.799zM19 1.004s3.117 3.117-2.955 7.91c-4.869 3.845-1.11 6.038-0.001 8.543-2.842-2.566-4.927-4.821-3.529-6.922 2.054-3.085 7.744-4.58 6.486-9.531zM22.393 22.978c5.627-2.924 3.025-5.735 1.21-5.355-0.249 0.047-0.465 0.107-0.674 0.182l0.030-0.009c0.119-0.167 0.283-0.296 0.474-0.369l0.007-0.002c3.593-1.263 6.356 3.725-1.16 5.701 0.046-0.041 0.084-0.090 0.111-0.145l0.001-0.003zM12.616 17.512s-5.451 1.295-1.929 1.764c0.948 0.078 2.052 0.122 3.166 0.122 1.424 0 2.831-0.073 4.218-0.214l-0.174 0.014c2.257-0.19 4.521-0.596 4.521-0.596-0.531 0.232-0.982 0.477-1.409 0.756l0.037-0.022c-5.535 1.456-16.228 0.779-13.149-0.71 1.357-0.703 2.963-1.115 4.665-1.115 0.019 0 0.038 0 0.057 0h-0.003zM25.16 26.627s0.849 0.699-0.933 1.238c-3.389 1.027-14.106 1.336-17.081 0.041-1.070-0.466 0.937-1.112 1.567-1.247 0.291-0.074 0.626-0.117 0.97-0.117 0.023 0 0.045 0 0.068 0.001l-0.003-0c-1.191-0.839-7.693 1.646-3.303 2.358 11.972 1.941 21.821-0.875 18.716-2.274zM17.395 15.344c0.314 0.377 0.505 0.868 0.505 1.402 0 0.719-0.346 1.358-0.88 1.759l-0.006 0.004s3.673-1.897 1.986-4.271c-1.576-2.214-2.784-3.314 3.758-7.108 0-0.001-10.267 2.563-5.363 8.214zM11.346 20.915s-1.285 0.951 0.677 1.155c0.859 0.108 1.852 0.169 2.86 0.169 1.826 0 3.605-0.202 5.315-0.585l-0.162 0.030c0.344 0.322 0.755 0.578 1.209 0.744l0.025 0.008c-7.097 2.076-15.004 0.162-9.925-1.522zM12.065 24.198s-1.146 0.667 0.816 0.892c0.719 0.107 1.548 0.168 2.392 0.168 1.354 0 2.671-0.157 3.934-0.455l-0.116 0.023c0.467 0.285 1.010 0.557 1.577 0.782l0.074 0.026c-5.872 2.516-13.287-0.147-8.676-1.436z"></path>
+                                        </svg>
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <title>Android Studio</title>
+                                            <path d="M19.2693 10.3368c-.3321 0-.6026.2705-.6026.6031v9.8324h-1.7379l-3.3355-6.9396c.476-.5387.6797-1.286.5243-2.0009a2.2862 2.2862 0 0 0-1.2893-1.6248v-.8124c.0121-.2871-.1426-.5787-.4043-.7407-.1391-.0825-.2884-.1234-.4402-.1234a.8478.8478 0 0 0-.4318.1182c-.2701.1671-.4248.4587-.4123.7662l-.0003.721c-1.0149.3668-1.6619 1.4153-1.4867 2.5197a2.282 2.282 0 0 0 .5916 1.2103l-3.2096 6.9064H4.0928c-1.0949-.007-1.9797-.8948-1.9832-1.9896V5.016c-.0055 1.1024.8836 2.0006 1.9859 2.0062a2.024 2.024 0 0 0 .1326-.0037h14.7453s2.5343-.2189 2.8619 1.5392c-.2491.0287-.4449.2321-.4449.4889 0 .7115-.5791 1.2901-1.3028 1.2901h-.8183zM17.222 22.5366c.2347.4837.0329 1.066-.4507 1.3007-.1296.0629-.2666.0895-.4018.0927a.9738.9738 0 0 1-.3194-.0455c-.024-.0078-.046-.0209-.0694-.0305a.9701.9701 0 0 1-.2277-.1321c-.0247-.0192-.0495-.038-.0724-.0598-.0825-.0783-.1574-.1672-.21-.2757l-1.2554-2.6143-1.5585-3.2452a.7725.7725 0 0 0-.6995-.4443h-.0024a.792.792 0 0 0-.7083.4443l-1.5109 3.2452-1.2321 2.6464a.9722.9722 0 0 1-.7985.5795c-.0626.0053-.1238-.0024-.185-.0087-.0344-.0036-.069-.0053-.1025-.0124-.0489-.0103-.0954-.0278-.142-.0452-.0301-.0113-.0613-.0197-.0901-.0339-.0496-.0244-.0948-.0565-.1397-.0889-.0217-.0156-.0457-.0275-.0662-.045a.9862.9862 0 0 1-.1695-.1844.9788.9788 0 0 1-.0708-.9852l.8469-1.8223 3.2676-7.0314a1.7964 1.7964 0 0 1-.7072-1.1637c-.1555-.9799.5129-1.9003 1.4928-2.0559V9.3946a.3542.3542 0 0 1 .1674-.3155.3468.3468 0 0 1 .3541 0 .354.354 0 0 1 .1674.3155v1.159l.0129.0064a1.8028 1.8028 0 0 1 1.2878 1.378 1.7835 1.7835 0 0 1-.6439 1.7836l3.3889 7.0507.8481 1.7643zM12.9841 12.306c.0042-.6081-.4854-1.1044-1.0935-1.1085a1.1204 1.1204 0 0 0-.7856.3219 1.101 1.101 0 0 0-.323.7716c-.0042.6081.4854 1.1044 1.0935 1.1085h.0077c.6046 0 1.0967-.488 1.1009-1.0935zm-1.027 5.2768c-.1119.0005-.2121.0632-.2571.1553l-1.4127 3.0342h3.3733l-1.4564-3.0328a.274.274 0 0 0-.2471-.1567zm8.1432-6.7459l-.0129-.0001h-.8177a.103.103 0 0 0-.103.103v12.9103a.103.103 0 0 0 .0966.103h.8435c.9861-.0035 1.7836-.804 1.7836-1.79V9.0468c0 .9887-.8014 1.7901-1.7901 1.7901zM2.6098 5.0161v.019c.0039.816.6719 1.483 1.4874 1.4869a12.061 12.061 0 0 1 .1309-.0034h1.1286c.1972-1.315.7607-2.525 1.638-3.4859H4.0993c-.9266.0031-1.6971.6401-1.9191 1.4975.2417.0355.4296.235.4296.4859zm6.3381-2.8977L7.9112.3284a.219.219 0 0 1 0-.2189A.2384.2384 0 0 1 8.098 0a.219.219 0 0 1 .1867.1094l1.0496 1.8158a6.4907 6.4907 0 0 1 5.3186 0L15.696.1094a.2189.2189 0 0 1 .3734.2189l-1.0302 1.79c1.6671.9125 2.7974 2.5439 3.0975 4.4018l-12.286-.0014c.3004-1.8572 1.4305-3.488 3.0972-4.4003zm5.3774 2.6202a.515.515 0 0 0 .5271.5028.515.515 0 0 0 .5151-.5151.5213.5213 0 0 0-.8885-.367.5151.5151 0 0 0-.1537.3793zm-5.7178-.0067a.5151.5151 0 0 0 .5207.5095.5086.5086 0 0 0 .367-.1481.5215.5215 0 1 0-.734-.7341.515.515 0 0 0-.1537.3727z"/>
+                                        </svg>
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <title>Android</title>
+                                            <path d="M18.4395 5.5586c-.675 1.1664-1.352 2.3318-2.0274 3.498-.0366-.0155-.0742-.0286-.1113-.043-1.8249-.6957-3.484-.8-4.42-.787-1.8551.0185-3.3544.4643-4.2597.8203-.084-.1494-1.7526-3.021-2.0215-3.4864a1.1451 1.1451 0 0 0-.1406-.1914c-.3312-.364-.9054-.4859-1.379-.203-.475.282-.7136.9361-.3886 1.5019 1.9466 3.3696-.0966-.2158 1.9473 3.3593.0172.031-.4946.2642-1.3926 1.0177C2.8987 12.176.452 14.772 0 18.9902h24c-.119-1.1108-.3686-2.099-.7461-3.0683-.7438-1.9118-1.8435-3.2928-2.7402-4.1836a12.1048 12.1048 0 0 0-2.1309-1.6875c.6594-1.122 1.312-2.2559 1.9649-3.3848.2077-.3615.1886-.7956-.0079-1.1191a1.1001 1.1001 0 0 0-.8515-.5332c-.5225-.0536-.9392.3128-1.0488.5449zm-.0391 8.461c.3944.5926.324 1.3306-.1563 1.6503-.4799.3197-1.188.0985-1.582-.4941-.3944-.5927-.324-1.3307.1563-1.6504.4727-.315 1.1812-.1086 1.582.4941zM7.207 13.5273c.4803.3197.5506 1.0577.1563 1.6504-.394.5926-1.1038.8138-1.584.4941-.48-.3197-.5503-1.0577-.1563-1.6504.4008-.6021 1.1087-.8106 1.584-.4941z"/>
+                                        </svg>     
+                                    </div>
+                                </div>
+                                <div class="project-cards__about">
+                                    <h2>About</h2>
+                                    <span>An Android application developed in Android Studio to track attendance for a school/college course. I contributed by testing, making minor modifications, and providing suggestions.</span>
+                                </div>
+                                <div class="project-cards__footer">
+                                    <a href="https://github.com/ikuyorih9/Faltei" target="_blank">
+                                        <span class="fa fa-code"></span>
+                                        <span>go to repo</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- ICMC Processor Cotnribution Card -->
+                            <div class="project-cards">
+                                <div class="project-cards__header">
+                                    <div class="project-cards__header-repo-icon">
+                                        <a href="https://github.com/simoesusp/Processador-ICMC" target="_blank">
+                                            <span class="fa fa-book"></span>
+                                        </a>
+                                    </div>
+                                    <div class="project-cards__header-title">
+                                        <h1>ICMC-Processor</h1>
+                                    </div>
+                                </div>
+                                <div class="project-cards__techs">
+                                    <div class="project-cards__techs-title">
+                                        <h2>Techs</h2>
+                                    </div>
+                                    <div class="project-cards__techs-icons">
+                                        <svg role="img" style="width: 25px; height: 25px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
+                                        width="96.000000pt" height="96.000000pt" viewBox="0 0 96.000000 96.000000"
+                                        preserveAspectRatio="xMidYMid meet">
+                                           <title>Assembly</title>
+                                           <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                           stroke="none">
+                                               <path d="M174 668 c-55 -95 -99 -180 -99 -188 0 -8 44 -93 99 -188 l98 -172
+                                               208 0 208 0 101 174 c56 96 101 180 101 186 0 6 -45 90 -101 186 l-101 174
+                                               -208 0 -208 0 -98 -172z m183 -183 c38 -115 39 -118 16 -113 -9 2 -21 18 -25
+                                               36 -8 28 -13 32 -43 32 -30 0 -37 -5 -49 -35 -13 -30 -36 -49 -36 -29 0 12 53
+                                               179 62 197 20 38 41 13 75 -88z m167 94 c36 -17 22 -30 -23 -23 -46 7 -71 -14
+                                               -46 -40 9 -9 22 -16 29 -16 7 0 25 -9 40 -21 57 -45 16 -118 -60 -106 -42 7
+                                               -69 26 -55 40 5 5 17 4 30 -3 33 -17 75 -9 79 16 2 16 -5 25 -28 34 -76 32
+                                               -98 72 -60 110 22 22 57 26 94 9z m112 -53 l21 -59 17 62 c13 48 21 61 37 61
+                                               19 0 20 -6 17 -107 -2 -74 -7 -108 -15 -111 -10 -3 -13 17 -14 75 l0 78 -17
+                                               -44 c-23 -59 -38 -62 -54 -9 l-13 43 -5 -69 c-3 -43 -10 -71 -17 -74 -10 -3
+                                               -13 23 -13 108 0 101 2 111 18 108 11 -2 25 -25 38 -62z"/>
+                                               <path d="M292 521 c-18 -50 -15 -61 13 -61 28 0 29 9 11 60 l-13 34 -11 -33z"/>
+                                           </g>
+                                       </svg>   
+                                       <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <title>C</title>
+                                            <path d="M16.5921 9.1962s-.354-3.298-3.627-3.39c-3.2741-.09-4.9552 2.474-4.9552 6.14 0 3.6651 1.858 6.5972 5.0451 6.5972 3.184 0 3.5381-3.665 3.5381-3.665l6.1041.365s.36 3.31-2.196 5.836c-2.552 2.5241-5.6901 2.9371-7.8762 2.9201-2.19-.017-5.2261.034-8.1602-2.97-2.938-3.0101-3.436-5.9302-3.436-8.8002 0-2.8701.556-6.6702 4.047-9.5502C7.444.72 9.849 0 12.254 0c10.0422 0 10.7172 9.2602 10.7172 9.2602z"/>
+                                        </svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 512 512">
+                                            <title>VHDL</title>
+                                            <path d="M378.04 424.23H133.96c-26.104 0-47.462-21.357-47.462-47.461v-244.08c0-26.105 21.358-47.462 47.462-47.462h244.08c26.104 0 47.462 21.357 47.462 47.461v244.08c0 26.105-21.358 47.462-47.462 47.462m-39.847-253.059H177.9v160.294h160.294zM182.351 0H152.5v71.768h29.85zm59.879 0h-29.851v71.768h29.85zm59.88 0h-29.851v71.768h29.85zm59.879 0h-29.851v71.768h29.85zM73.039 329.684H0v29.851h73.04zm0-59.878H0v29.85h73.04zm0-59.88H0v29.85h73.04zm0-59.88H0v29.851h73.04zM512 329.684h-73.04v29.851H512zm0-59.878h-73.04v29.85H512zm0-59.88h-73.04v29.85H512zm0-59.88h-73.04v29.851H512zM182.35 440.232H152.5V512h29.85zm59.88 0h-29.851V512h29.85zm59.879 0h-29.851V512h29.85zm59.88 0h-29.851V512h29.85zM151.55 128.902c0-12.272-13.376-19.983-24.018-13.847c-10.643 6.135-10.643 21.557 0 27.693s24.018-1.576 24.018-13.847"/>
+                                        </svg> 
+                                    </div>
+                                </div>
+                                <div class="project-cards__about">
+                                    <h2>About</h2>
+                                    <span>This project involves the development of a comprehensive environment for teaching and learning computer architecture, VHDL processor design, and Assembly language. I contributed by creating an Assembly function to display a number of up to 16 bits (the size of a register) on the screen.</span>
+                                </div>
+                                <div style="margin-top: 15px;" class="project-cards__footer">
+                                    <a href="https://github.com/simoesusp/Processador-ICMC" target="_blank">
+                                        <span class="fa fa-code"></span>
+                                        <span>go to repo</span>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Go to GitHub Card -->
+                            <div class="project-cards">
+                                
+                            </div>
+                        </div>
+
+                        <!-- Project Cards Carousel Navigation -->
+                        <nav class="project-cards-carousel__nav">
+                            <label for="contributions-card-1" id="contributions-card-1-label"></label>
+                            <label for="contributions-card-2" id="contributions-card-2-label"></label>
+                            <label for="contributions-card-3" id="contributions-card-3-label"></label>
+                            <label for="contributions-card-4" id="contributions-card-4-label"></label>
                         </nav>
                     </div>
                     
@@ -372,7 +566,10 @@
         </div>
     </main>
     <footer>
-        ©2024 Isaac Soares
+        <a href="https://github.com/ISS2718/ISS2718.github.io" target="_blank">
+            <span class="fa fa-copyright"></span>
+            <span>2024 Isaac Soares</span>
+        </a>
     </footer>
 </body>
 </html>

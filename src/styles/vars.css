@@ -1,6 +1,6 @@
 :root {
     /* FONT */
-    --font-dm-sans: "DM Sans", sans-serif;
+    --font-dm-sans: "Prompt", sans-serif;
     --font-project-cards-header-title: "Sixtyfour", sans-serif;
     
     /* COLORS */
@@ -45,11 +45,11 @@
     /* PROJECT CARD CAROUSEL SIZES*/
     --project-cards-carousel-limit-width: 441.5px;
     --project-cards-carousel-limit-height: 430px;
-    --projet-cards-carousel-width: 600%; /* 6 cards */
+    --projet-cards-carousel-width: 700%; /* 7 cards */
     --project-cards-carousel-height: 100%; /* 1 card */
     --project-cards-carousel-nav-width: 442px;
     --project-cards-carousel-nav-height: 20px;
-    --project-cards-carousel-nav-bar-width: 50px;
+    --project-cards-carousel-nav-bar-width: 45px;
     --project-cards-carousel-nav-bar-height: 6px;
 
     /* PROJECT CARD SIZES*/
@@ -59,8 +59,11 @@
     --project-cards-title-font-size: 200%;
 
     /* PROJECT CARDS TECHS IMG SIZES*/
-    --project-cards-techs-img-height: 18px;
-    --project-cards-techs-img-width: 18px;
+    --project-cards-techs-icon-height: 18px;
+    --project-cards-techs-icon-width: 18px;
+    
+    /* PROJECT CARDS TITLE SIZES*/
+    --project-cards-title-height: 145px;
 
     /* PROJECT CARDS IMG  SIZES*/
     --project-cards-img-width: 330px;

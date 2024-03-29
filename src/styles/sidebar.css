@@ -61,6 +61,10 @@
     gap: 10px;   
 }
 
+.sidebar__navigation li a .fa {
+    transition: .3s;
+}
+
 .sidebar__navigation li a:hover .fa {
     transform: scaleX(2);
 }

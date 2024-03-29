@@ -1,0 +1,31 @@
+#contributions-card-1:checked ~ .project-cards-carousel {
+    margin-left: 0;
+}
+
+#contributions-card-2:checked ~ .project-cards-carousel {
+    margin-left: -100%;
+}
+
+#contributions-card-3:checked ~ .project-cards-carousel {
+    margin-left: -200%;
+}
+
+#contributions-card-4:checked ~ .project-cards-carousel {
+    margin-left: -300%;
+}
+
+#contributions-card-1:checked ~ nav #contributions-card-1-label {
+    background-color: var(--color-bg-project-cards-nav-bar);
+}
+
+#contributions-card-2:checked ~ nav #contributions-card-2-label {
+    background-color: var(--color-bg-project-cards-nav-bar);
+}
+
+#contributions-card-3:checked ~ nav #contributions-card-3-label {
+    background-color: var(--color-bg-project-cards-nav-bar);
+}
+
+#contributions-card-4:checked ~ nav #contributions-card-4-label {
+    background-color: var(--color-bg-project-cards-nav-bar);
+}
