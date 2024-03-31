@@ -42,6 +42,12 @@
     margin: 70px 0;
 }
 
+@media screen and (max-width: 768px) {
+    .main-container section:last-of-type {
+        margin: 70px 0 0 0; 
+    }
+}
+
 .section__header {
     display: flex;
     flex-direction: row;

@@ -58,7 +58,7 @@
 
     /* PROJECT CARD SIZES*/
     --project-cards-width: 440px;
-    --project-cards-height: 405px;
+    --macOS-visualiser-scroll-height: 405px;
     --project-cards-border-radius: 10px;
     --project-cards-title-font-size: 200%;
 
