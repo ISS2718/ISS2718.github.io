@@ -24,6 +24,14 @@
 }
 /* FIM SCROLL */
 
+@media screen and (max-width: 768px) {
+    .offer__scroll-container {
+        max-height: none;
+        overflow-y: none;
+        overflow-x: none;
+    }
+}
+
 .main-container section {
     display: flex;
     flex-direction: column;
