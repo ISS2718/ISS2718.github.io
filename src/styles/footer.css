@@ -1,10 +1,14 @@
-footer {
+.footer-default a span{
+    color: var(--color-text-footer);
+}
+
+.footer-desktop {
     position: fixed;
     bottom: 0;
     right: 0;
     padding: 5px 10px;
 }
 
-footer a span{
-    color: var(--color-text-footer);
+.mobile-footer {
+    display: none;
 }
