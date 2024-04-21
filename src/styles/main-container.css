@@ -11,16 +11,23 @@
 /* SCROLL */
 .offer__scroll-container {
     max-height: var(--macOS-visualiser-scroll-height);
+    max-width: fit-content;
     overflow-y: auto;
-    overflow-x: hidden;
+
+    padding: 0 15px 0 0;
 }
 
 .offer__scroll-container::-webkit-scrollbar {
-    width: 1px;
+    width: 5px;
 }
 
 .offer__scroll-container::-webkit-scrollbar-thumb {
-    background-color: transparent;
+    background-color: var(--color-scroll-bar);
+    border-radius: 25px;
+}
+
+.offer__scroll-container::-webkit-scrollbar-thumb:hover{
+    background-color: var(--color-scroll-bar-hovered);
 }
 /* FIM SCROLL */
 
@@ -87,7 +94,9 @@
 
 .section__content {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
 
     background-color: var(--color-bg-main-container-section-content);
     height: var(--macOS-window-content-height);
@@ -96,9 +105,38 @@
     margin: 0 0 10px 0;
 }
 
+.about .section__content {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
 .section__content p {
     font-size: 1rem;
     font-weight: 300;
     color: var(--color-text-main-content);
     justify-content: center;
+}
+
+.section__content button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: var(--project-cards-carousel-button-width);
+    height: var(--project-cards-carousel-button-height);
+    border: 1px solid var(--color-border-project-cards-nav-bar);
+    border-radius: 50%;
+
+    margin: 0 15px;
+
+    opacity: 0.4;
+    background-color: var(--color-bg-project-cards-nav-bar);
+    
+    transition: 0.6s;
+}
+
+.section__content button:hover {
+    opacity: 0.9;
 }

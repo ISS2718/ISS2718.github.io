@@ -43,7 +43,7 @@
     cursor: pointer;
 }
 
-.menu-faketrigger:checked ~ ul {
+.menu-faketrigger:checked ~ .ham-menu__sidebar {
     display: block;
 }
 
@@ -61,7 +61,7 @@
     cursor: pointer;
 }
 
-.ham-menu ul {
+.ham-menu__sidebar {
     display: none;
 
     position: absolute;
@@ -72,7 +72,48 @@
     width: 50vw;
     height: 100vh;
 
-    padding: 100px 30px;
+    padding: 85px 30px;
 
-    background-color: var(--color-bg-main-container-section-content);
+    background-color: var(--color-bg-page);
+}
+.ham-menu__sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ham-menu__sidebar a {
+    color: var(--color-text-navgaition);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.ham-menu__sidebar li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;   
+}
+
+.ham-menu__contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 50% 0;
+}
+
+.ham-menu__contacts a {
+    margin: 0 10px;
+}
+
+.ham-menu__contacts svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: var(--color-sidebar-contacts-icons);
 }

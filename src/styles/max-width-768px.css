@@ -30,6 +30,8 @@
         --project-cards-carousel-limit-height: 100vh;
         --project-cards-carousel-limit-width: 80.38vw;
         --project-cards-carousel-nav-width: 70vw;
+        --project-cards-carousel-button-width: 20px;
+        --project-cards-carousel-button-height: 20px;
 
         /* PROJECT CARD SIZES*/
         --project-cards-width: 80vw;
@@ -61,11 +63,25 @@
         display: none;
     }
 
+    .sidebar__contacts {
+        display: none;
+    }
+
     .offer__scroll-container {
         overflow-y: visible;
         overflow-x: visible;
 
         margin: 0 0 70px 0;
+        padding: 0;
+    }
+
+    .offer__scroll-container::-webkit-scrollbar {
+        width: 1px;
+    }
+    
+    .offer__scroll-container::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 0;
     }
 
     .main-container {
@@ -78,6 +94,10 @@
 
     .main-container section:last-of-type {
         margin: 35px 0;
+    }
+
+    .section__content button {
+        margin: 0;
     }
 
     .footer-mobile {

@@ -24,6 +24,8 @@
     --color-bg-project-cards-nav-bar: #D9D9D9;
     --color-border-project-cards-nav-bar: #D9D9D9;
     --color-bg-ham-menu: #282C34;
+    --color-scroll-bar: #D9D9D980;
+    --color-scroll-bar-hovered: #d9d9d9d5;
 
     /* BODY SIZES */
     --margin-top-screen: 90px;
@@ -38,6 +40,7 @@
 
     /* "MACOS" VISUALISER SCROLL SIZE */
     --macOS-visualiser-scroll-height: 564px;
+
 
     /* "MACOS" WINDOW SIZES */
     --macOS-window-width: 600px;
@@ -63,6 +66,8 @@
     --project-cards-carousel-nav-height: 20px;
     --project-cards-carousel-nav-bar-width: 45px;
     --project-cards-carousel-nav-bar-height: 6px;
+    --project-cards-carousel-button-width: 30px;
+    --project-cards-carousel-button-height: 30px;
 
     /* PROJECT CARD SIZES*/
     --project-cards-width: 440px;

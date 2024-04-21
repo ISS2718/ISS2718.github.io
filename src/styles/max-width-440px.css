@@ -22,7 +22,7 @@
 
         /* PROJECT CARD CAROUSEL SIZES*/
         --project-cards-carousel-limit-width: 80.36vw;
-        --project-cards-carousel-nav-width: 70vw;
+        --project-cards-carousel-nav-width: 100%;
 
         /* PROJECT CARD SIZES*/
         --project-cards-width: 80vw;
