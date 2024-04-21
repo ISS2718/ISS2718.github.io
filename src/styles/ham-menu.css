@@ -6,10 +6,28 @@
     left: 0;
 }
 
+@keyframes fade-in-bar {
+    0% {
+        background-color: transparent;
+    }
+
+    25% {
+        background-color: var(--color-bg-ham-menu);
+        transformz: translateZ(998);
+    }
+
+    100% {
+        background-color: var(--color-bg-ham-menu);
+        transformz: translateZ(998);
+    }
+  }
+
 .ham-menu__nav {
     width: 100vw;
     height: 60px;
-    background-color: var(--color-bg-main-container-section-content);
+
+    animation: fade-in-bar 1ms ease-in-out;
+    animation-timeline: scroll();
 }
 
 .menu-faketrigger {
@@ -49,7 +67,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 998;
+    z-index: -1;
 
     width: 50vw;
     height: 100vh;

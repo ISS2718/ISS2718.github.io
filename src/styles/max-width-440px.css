@@ -20,17 +20,16 @@
         --macOS-window-header-title-font-weight: 700;
         --macOS-window-header-title-width: 70vw;
 
-
-        /* "MACOS" WINDOW CONTENT  SIZES */
-        --macOS-window-content-width: 94.5%;
-
         /* PROJECT CARD CAROUSEL SIZES*/
-        --project-cards-carousel-limit-width: 80.399vw;
+        --project-cards-carousel-limit-width: 80.36vw;
         --project-cards-carousel-nav-width: 70vw;
 
         /* PROJECT CARD SIZES*/
         --project-cards-width: 80vw;
         --project-cards-title-font-size: 140%;
+        
+        /* PROJECT CARDS TITLE SIZES*/
+        --project-cards-title-height: 100px;
 
         /* PROJECT CARDS IMG  SIZES*/
         --project-cards-img-width: 66vw;
@@ -86,6 +85,31 @@
     }
 }
 
+@media screen and (max-width: 440px) and (max-height: 750px) {
+    :root {
+        /* "MACOS" WINDOW CONTENT  SIZES */
+        --macOS-window-content-height: 55vh;
+
+        /* PROJECT CARD CAROUSEL SIZES*/
+        --project-cards-carousel-limit-height: 55vh;
+
+        /* "MACOS" WINDOW CONTENT  SIZES */
+        --macOS-window-content-width: 94.1%;
+
+        /* PROJECT CARD SIZES*/
+        --project-cards-height: 50vh;
+
+        /* PROJECT CARDS TECHS IMG SIZES*/
+        --project-cards-techs-icon-height: 10px;
+        --project-cards-techs-icon-width: 10px;
+    }
+
+    .project-cards__about {
+        padding: 3px 0;
+        font-size: small;
+    }
+}
+
 @media screen and (max-width: 440px) and (max-height: 670px) {
     :root {
         /* "MACOS" WINDOW CONTENT  SIZES */
@@ -93,6 +117,9 @@
 
         /* PROJECT CARD CAROUSEL SIZES*/
         --project-cards-carousel-limit-height: 60vh;
+
+        /* "MACOS" WINDOW CONTENT  SIZES */
+        --macOS-window-content-width: 95%;
 
         /* PROJECT CARD SIZES*/
         --project-cards-height: 55vh;
