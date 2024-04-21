@@ -1,0 +1,119 @@
+.ham-menu {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+@keyframes fade-in-bar {
+    0% {
+        background-color: transparent;
+    }
+
+    25% {
+        background-color: var(--color-bg-ham-menu);
+        transformz: translateZ(998);
+    }
+
+    100% {
+        background-color: var(--color-bg-ham-menu);
+        transformz: translateZ(998);
+    }
+  }
+
+.ham-menu__nav {
+    width: 100vw;
+    height: 60px;
+
+    animation: fade-in-bar 1ms ease-in-out;
+    animation-timeline: scroll();
+}
+
+.menu-faketrigger {
+    position: absolute;
+    z-index: 1000;
+    opacity: 0;
+
+    width: var(--ham-menu-icon-width);
+    height: var(--ham-menu-icon-height);
+
+    margin: var(--ham-menu-margin);
+
+    cursor: pointer;
+}
+
+.menu-faketrigger:checked ~ .ham-menu__sidebar {
+    display: block;
+}
+
+.ham-menu__icon {
+    position: absolute;
+    z-index: 999;
+    color: var(--color-sidebar-contacts-icons);
+    font-size: var(--ham-menu-icon-size);
+
+    margin: var(--ham-menu-margin);
+
+    width: var(--ham-menu-icon-width);
+    height: var(--ham-menu-icon-height);
+
+    cursor: pointer;
+}
+
+.ham-menu__sidebar {
+    display: none;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 50vw;
+    height: 100vh;
+
+    padding: 85px 30px;
+
+    background-color: var(--color-bg-page);
+}
+.ham-menu__sidebar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.ham-menu__sidebar a {
+    color: var(--color-text-navgaition);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.ham-menu__sidebar li a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;   
+}
+
+.ham-menu__contacts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    margin: 50% 0;
+}
+
+.ham-menu__contacts a {
+    margin: 0 10px;
+}
+
+.ham-menu__contacts svg {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: var(--color-sidebar-contacts-icons);
+}

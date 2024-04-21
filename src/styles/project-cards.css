@@ -34,7 +34,7 @@
     align-items: center;
     justify-content: center;
 
-    width: var(--project-cards-width);
+    width: var(--project-cards-title-width);
     height: var(--project-cards-title-height);
 }
 

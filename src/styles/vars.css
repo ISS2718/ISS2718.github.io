@@ -23,12 +23,24 @@
     --color-project-cards-footer: #E06C75;
     --color-bg-project-cards-nav-bar: #D9D9D9;
     --color-border-project-cards-nav-bar: #D9D9D9;
+    --color-bg-ham-menu: #282C34;
+    --color-scroll-bar: #D9D9D980;
+    --color-scroll-bar-hovered: #d9d9d9d5;
 
     /* BODY SIZES */
-    --margin-top-screen: 90px 0 0 0;
+    --margin-top-screen: 90px;
+
+    /* SIDE BAR SIZES */
+    --sidebar-width: 500px;
+    --sidebar-img-width: 300px;
+    --sidebar-img-height: 300px;
+    --sidebar-img-border-size:  5px;
+    --siddebar-h1-font-size: 2rem;
+    --siddebar-h2-font-size: 1.5rem;
 
     /* "MACOS" VISUALISER SCROLL SIZE */
     --macOS-visualiser-scroll-height: 564px;
+
 
     /* "MACOS" WINDOW SIZES */
     --macOS-window-width: 600px;
@@ -40,7 +52,6 @@
     --macOS-window-header-title-font-size: 1.15rem;
     --macOS-window-header-title-font-weight: 700;
     --macOS-window-header-title-width: 522px;
-    --macOS-window-header-title-position: 35%;
 
     /* "MACOS" WINDOW CONTENT  SIZES */
     --macOS-window-content-width: 580px;
@@ -55,6 +66,8 @@
     --project-cards-carousel-nav-height: 20px;
     --project-cards-carousel-nav-bar-width: 45px;
     --project-cards-carousel-nav-bar-height: 6px;
+    --project-cards-carousel-button-width: 30px;
+    --project-cards-carousel-button-height: 30px;
 
     /* PROJECT CARD SIZES*/
     --project-cards-width: 440px;
@@ -67,10 +80,17 @@
     --project-cards-techs-icon-width: 18px;
     
     /* PROJECT CARDS TITLE SIZES*/
+    --project-cards-title-width: 100%;
     --project-cards-title-height: 145px;
 
     /* PROJECT CARDS IMG  SIZES*/
     --project-cards-img-width: 330px;
     --project-cards-img-height: 170px;
     --project-cards-img-border-radius: 10px;
+
+    /* HAMBURGUER MENU SIZES */
+    --ham-menu-margin: 15px 20px;
+    --ham-menu-icon-size: 30px;
+    --ham-menu-icon-width: var(--ham-menu-icon-size);
+    --ham-menu-icon-height: var(--ham-menu-icon-size);
 }

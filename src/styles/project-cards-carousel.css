@@ -1,8 +1,4 @@
 .project-cards__carousel-limit {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -20,15 +16,11 @@
     flex-direction: row;
     width: var(--projet-cards-carousel-width);
     height: var(--projet-cards-carousel-height);
-    
+
     transition: .6s;
 }   
 
 .project-cards-carousel__nav {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-
     display: flex;
     flex-direction: row;
     align-items: center;

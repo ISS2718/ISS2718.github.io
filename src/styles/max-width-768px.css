@@ -1,0 +1,114 @@
+@media screen and (max-width: 768px) {
+    :root {
+        /* BODY SIZES */
+        --margin-top-screen: 50px;
+
+        /* SIDE BAR SIZES */
+        --sidebar-width: 100vw;
+        --sidebar-img-width: 300px;
+        --sidebar-img-height: 300px;
+        --sidebar-img-border-size: 5px;
+        --siddebar-h1-font-size: 2rem;
+        --siddebar-h2-font-size: 1.5rem;
+
+        /* "MACOS" WINDOW SIZES */
+        --macOS-window-width: 100%;
+
+        /* "MACOS" WINDOW HEADER SIZES */
+        --macOS-window-header-margin: 15px 0;
+        --macOS-window-header-pading: 0 15px;
+        --macOS-window-header-title-font-size: 1.15rem;
+        --macOS-window-header-title-font-weight: 700;
+        --macOS-window-header-title-width: 70vw;
+
+
+        /* "MACOS" WINDOW CONTENT  SIZES */
+        --macOS-window-content-width: 97.35%;
+        --macOS-window-content-height: 60vh;
+
+        /* PROJECT CARD CAROUSEL SIZES*/
+        --project-cards-carousel-limit-height: 100vh;
+        --project-cards-carousel-limit-width: 80.38vw;
+        --project-cards-carousel-nav-width: 70vw;
+        --project-cards-carousel-button-width: 20px;
+        --project-cards-carousel-button-height: 20px;
+
+        /* PROJECT CARD SIZES*/
+        --project-cards-width: 80vw;
+        --project-cards-height: 55vh;
+        --project-cards-title-font-size: 160%;
+
+        /* PROJECT CARDS IMG  SIZES*/
+        --project-cards-img-width: 70vw;
+        --project-cards-img-height: 43vw;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        max-height: fit-content;
+    }
+
+    .ham-menu {
+        display: inline-block;
+    }
+
+    .sidebar {
+        margin: 100px 0 0 10px;
+    }
+
+    .sidebar__navigation {
+        display: none;
+    }
+
+    .sidebar__contacts {
+        display: none;
+    }
+
+    .offer__scroll-container {
+        overflow-y: visible;
+        overflow-x: visible;
+
+        margin: 0 0 70px 0;
+        padding: 0;
+    }
+
+    .offer__scroll-container::-webkit-scrollbar {
+        width: 1px;
+    }
+    
+    .offer__scroll-container::-webkit-scrollbar-thumb {
+        background-color: transparent;
+        border-radius: 0;
+    }
+
+    .main-container {
+        margin: var(--margin-top-screen) 0 0 10px;
+    }
+
+    .main-container section + section {
+        margin: 35px 0 0 0;
+    }
+
+    .main-container section:last-of-type {
+        margin: 35px 0;
+    }
+
+    .section__content button {
+        margin: 0;
+    }
+
+    .footer-mobile {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+        padding-right: 10px;
+    }
+
+    .footer-desktop {
+        display: none;
+    }
+}
