@@ -30,8 +30,8 @@
         --project-cards-carousel-limit-height: 100vh;
         --project-cards-carousel-limit-width: 80.38vw;
         --project-cards-carousel-nav-width: 70vw;
-        --project-cards-carousel-button-width: 0.3125rem;
-        --project-cards-carousel-button-height: 0.3125rem;
+        --project-cards-carousel-button-width: 1.25rem;
+        --project-cards-carousel-button-height: 1.25rem;
 
         /* PROJECT CARD SIZES*/
         --project-cards-width: 80vw;
