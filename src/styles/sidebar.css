@@ -67,8 +67,12 @@
     transition: .3s;
 }
 
+.sidebar__navigation li a .fa .fast-transition {
+    transition: 1ms;
+}
+
 .sidebar__navigation li a:hover .fa {
-    transform: scaleX(2);
+    transform: scaleX(2) !important;
 }
 
 .sidebar__contacts {

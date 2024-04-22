@@ -1,8 +1,8 @@
 .project-cards {
     width: var(--project-cards-width);
     height: var(--project-cards-height);
-    border: 1px solid var(--color-border);
-    border-radius: 10px;
+    border: 0.0625rem solid var(--color-border);
+    border-radius: 0.625rem;
     background-color: var(--color-bg-page);
 
     display: flex;
@@ -17,7 +17,7 @@
 }
 
 .project-cards__header-repo-icon {
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 .project-cards__header-repo-icon a {
@@ -68,7 +68,7 @@
 .project-cards h2 {
     color: var(--color-h2);
     font-size: small;
-    margin: 10px 0 0 0; 
+    margin: 0.625rem 0 0 0; 
 }
 
 .project-cards__techs-icons {
@@ -77,24 +77,24 @@
     align-items: center;
     align-content: center;
     justify-content: space-between;
-    gap: 5px;
+    gap: 0.3125rem;
 }
 
 .project-cards__techs-icons svg {
     height: var(--project-cards-techs-icon-height);
     width: var(--project-cards-techs-icon-width);
-    margin: 5px 0 0 0;
+    margin: 0.3125rem 0 0 0;
     fill: var(--color-project-cards-techs-icons);
 }
 
 .asm-icon {
-    height: 50px;
-    width: 50px;
+    height: 3.125rem;
+    width: 3.125rem;
 }
 
 .java-icon {
-    height: 20px;
-    width: 20px;
+    height: 1.25rem;
+    width: 1.25rem;
 }
 
 .project-cards__about {
@@ -102,7 +102,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    gap: 5px;
+    gap: 0.3125rem;
     
     color: var(--color-text-main-content);
     font-size: small;
@@ -110,11 +110,11 @@
 
 .project-cards__about span {
     text-align: justify;
-    padding: 0 60px;
+    padding: 0 3.75rem;
 }
 
 .project-cards__footer {
-    margin: 30px 0 10px 0;
+    margin: 1.875rem 0 0.625rem 0;
 }
 
 .project-cards__footer a {

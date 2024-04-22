@@ -39,31 +39,32 @@
 
     <!-- Links de Scripts -->
     <script src="./src/scripts/carrousel_buttons.js" defer></script>
+    <script src="./src/scripts/ham_menu_scroll.js" defer></script>
+    <script src="./src/scripts/section_indicators.js" defer></script>
 </head>
 <body>
     <header>
         <div class="ham-menu">
             <nav class="ham-menu__nav">
-                <input type="checkbox" class="menu-faketrigger" name="menu-faketrigger">
+                <input type="checkbox" class="menu-faketrigger" name="menu-faketrigger" aria-label="Menu">
                 <div class="ham-menu__icon">
                     <span class="fa-solid fa-bars"></span>
                 </div>
                 <div class="ham-menu__sidebar">
                     <ul class="">
-                        <li><a href="#hello-section"><span class="fa fa-minus"></span><span>Hello</span></a></li>
-                        <li><a href="#about-section"><span class="fa fa-minus"></span><span>About</span></a></li>
-                        <li><a href="#project-section"><span class="fa fa-minus"></span><span>Projects</span></a></li>
-                        <li><a href="#contribution-section"><span class="fa fa-minus"></span><span>Contributions</span></a></li>
+                        <li><a href="#about-section" title="go to about section"><span class="fa fa-minus"></span><span>About</span></a></li>
+                        <li><a href="#project-section" title="go to project section"><span class="fa fa-minus"></span><span>Projects</span></a></li>
+                        <li><a href="#contribution-section" title="go to contribution section"><span class="fa fa-minus"></span><span>Contributions</span></a></li>
                     </ul>
 
                     <div class="ham-menu__contacts">
-                        <a href="https://github.com/ISS2718" target="_blank">
+                        <a href="https://github.com/ISS2718" target="_blank" title="go to Isaac's GitHub">
                             <svg role="img" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
                                 <title>GitHub</title>
                                 <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/in/isaac-soares-76a111197/" target="_blank">
+                        <a href="https://www.linkedin.com/in/isaac-soares-76a111197/" target="_blank" title="go to Isaac's LinkedIn">
                             <svg role="img" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
                                 <title>LinkedIn</title>
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -85,16 +86,15 @@
             </div>
             <nav class="sidebar__navigation">
                 <ul>
-                    <li><a href="#hello-section"><span class="fa fa-minus"></span><span>Hello</span></a></li>
-                    <li><a href="#about-section"><span class="fa fa-minus"></span><span>About</span></a></li>
-                    <li><a href="#project-section"><span class="fa fa-minus"></span><span>Projects</span></a></li>
-                    <li><a href="#contribution-section"><span class="fa fa-minus"></span><span>Contributions</span></a></li>
+                    <li><a href="#about-section"><span class="fa fa-minus" title="go to about section"></span><span>About</span></a></li>
+                    <li><a href="#project-section"><span class="fa fa-minus" title="go to project section"></span><span>Projects</span></a></li>
+                    <li><a href="#contribution-section"><span class="fa fa-minus" title="go to contribution section"></span><span>Contributions</span></a></li>
                 </ul>
             </nav>
             <div class="sidebar__contacts">
                 <ul>
                     <li>
-                        <a href="https://github.com/ISS2718" target="_blank">
+                        <a href="https://github.com/ISS2718" target="_blank" title="go to Isaac's GitHub">
                             <svg role="img" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
                                 <title>GitHub</title>
                                 <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
@@ -102,7 +102,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/isaac-soares-76a111197/" target="_blank">
+                        <a href="https://www.linkedin.com/in/isaac-soares-76a111197/" target="_blank" title="go to Isaac's LinkedIn">
                             <svg role="img" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
                                 <title>LinkedIn</title>
                                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
@@ -151,16 +151,16 @@
                     </div>
                 </div>
                 <div class="section__content">
-                    <button id="project-left-button"><span class="fa fa-angle-left"></span></button>
+                    <button id="project-left-button" aria-label="previous project"><span class="fa fa-angle-left"></span></button>
                     <div class="project-cards__carousel-limit">
                         <!-- Project Cards Carousel Inputs -->
-                        <input type="radio" name="project-cards-carousel" id="project-card-1" checked="">
-                        <input type="radio" name="project-cards-carousel" id="project-card-2">
-                        <input type="radio" name="project-cards-carousel" id="project-card-3">
-                        <input type="radio" name="project-cards-carousel" id="project-card-4">
-                        <input type="radio" name="project-cards-carousel" id="project-card-5">
-                        <input type="radio" name="project-cards-carousel" id="project-card-6">
-                        <input type="radio" name="project-cards-carousel" id="project-card-7">
+                        <input type="radio" name="project-cards-carousel" id="project-card-1" checked="" aria-label="">
+                        <input type="radio" name="project-cards-carousel" id="project-card-2" aria-label="">
+                        <input type="radio" name="project-cards-carousel" id="project-card-3" aria-label="">
+                        <input type="radio" name="project-cards-carousel" id="project-card-4" aria-label="">
+                        <input type="radio" name="project-cards-carousel" id="project-card-5" aria-label="">
+                        <input type="radio" name="project-cards-carousel" id="project-card-6" aria-label="">
+                        <input type="radio" name="project-cards-carousel" id="project-card-7" aria-label="">
 
                         <!-- Project Cards Carousel -->
                         <div class="project-cards-carousel">
@@ -168,7 +168,7 @@
                             <div class="project-cards">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
-                                        <a href="https://github.com/ISS2718/LiveChat" target="_blank">
+                                        <a href="https://github.com/ISS2718/LiveChat" target="_blank" title="go to LiveChat GitHub Repo">
                                             <span class="fa fa-book"></span>
                                         </a>
                                     </div>
@@ -192,7 +192,7 @@
                                     <span>LiveChat is a Server-Client application for “LiveStream” chat with UDP communication. It includes moderator functions (such as mute and chat termination) and whispers for all users.</span>
                                 </div>
                                 <div class="project-cards__footer">
-                                    <a href="https://github.com/ISS2718/LiveChat" target="_blank">
+                                    <a href="https://github.com/ISS2718/LiveChat" target="_blank" title="go to LiveChat GitHub Repo">
                                         <span class="fa fa-code"></span>
                                         <span>go to repo</span>
                                     </a>
@@ -203,7 +203,7 @@
                             <div class="project-cards">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
-                                        <a href="https://github.com/ISS2718/SpaceInvaders" target="_blank">
+                                        <a href="https://github.com/ISS2718/SpaceInvaders" target="_blank" title="go to SpaceInvaders GitHub Repo">
                                             <span class="fa fa-book"></span>
                                         </a>
                                     </div>
@@ -227,7 +227,7 @@
                                     <span>My version of Space Invaders, created as an assignment for the Object-Oriented Programming (SCC0604) course taught by Professor Robson Leonardo Ferreira Cordeiro, for the Computer Engineering program at USP São Carlos.</span>
                                 </div>
                                 <div style="margin-top: 15px;" class="project-cards__footer">
-                                    <a href="https://github.com/ISS2718/SpaceInvaders" target="_blank">
+                                    <a href="https://github.com/ISS2718/SpaceInvaders" target="_blank" title="go to SpaceInvaders GitHub Repo">
                                         <span class="fa fa-code"></span>
                                         <span>go to repo</span>
                                     </a>
@@ -238,7 +238,7 @@
                             <div class="project-cards">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
-                                        <a href="https://github.com/ISS2718/SpotClone" target="_blank">
+                                        <a href="https://github.com/ISS2718/SpotClone" target="_blank" title="go to SpotClone GitHub Repo">
                                             <span class="fa fa-book"></span>
                                         </a>
                                     </div>
@@ -270,7 +270,7 @@
                                     <span>SpotClone is a clone of the Spotify web page created during the first #ImersãoFrontEnd by Alura. The goal of this project is to study and enhance my front-end development skills.</span>
                                 </div>
                                 <div class="project-cards__footer">
-                                    <a href="https://github.com/ISS2718/SpotClone" target="_blank">
+                                    <a href="https://github.com/ISS2718/SpotClone" target="_blank" title="go to SpotClone GitHub Repo">
                                         <span class="fa fa-code"></span>
                                         <span>go to repo</span>
                                     </a>
@@ -281,7 +281,7 @@
                             <div class="project-cards">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
-                                        <a href="https://github.com/ISS2718/Whisper.Driver" target="_blank">
+                                        <a href="https://github.com/ISS2718/Whisper.Driver" target="_blank" title="go to Whisper.Driver GitHub Repo">
                                             <span class="fa fa-book"></span>
                                         </a>
                                     </div>
@@ -309,7 +309,7 @@
                                     <span>Whisper.Driver is a Linux kernel module that reads user-pressed keys and communicates them to a server via TCP. Developed for the Operating Systems I (SSC0640) course at USP São Carlos, it aimed to study kernel module structure and permissions.</span>
                                 </div>
                                 <div style="margin-top: 10px;" class="project-cards__footer">
-                                    <a href="https://github.com/ISS2718/Whisper.Driver" target="_blank">
+                                    <a href="https://github.com/ISS2718/Whisper.Driver" target="_blank" title="go to Whisper.Driver GitHub Repo">
                                         <span class="fa fa-code"></span>
                                         <span>go to repo</span>
                                     </a>
@@ -320,7 +320,7 @@
                             <div class="project-cards">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
-                                        <a href="https://github.com/ISS2718/Certification_NLW" target="_blank">
+                                        <a href="https://github.com/ISS2718/Certification_NLW" target="_blank" title="go to Certification_NLW GitHub Repo">
                                             <span class="fa fa-book"></span>
                                         </a>
                                     </div>
@@ -352,7 +352,7 @@
                                     <span>This project is an API for a certification application, similar to LinkedIn’s skills assessment. It was developed during the NLW Expert Java track, the first Next Level Week of 2024, using a variety of technologies.</span>
                                 </div>
                                 <div class="project-cards__footer">
-                                    <a href="https://github.com/ISS2718/Certification_NLW" target="_blank">
+                                    <a href="https://github.com/ISS2718/Certification_NLW" target="_blank" title="go to Certification_NLW GitHub Repo">
                                         <span class="fa fa-code"></span>
                                         <span>go to repo</span>
                                     </a>
@@ -363,7 +363,7 @@
                             <div class="project-cards">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
-                                        <a href="https://github.com/nicholasestevao/Jogo-OrgComp" target="_blank">
+                                        <a href="https://github.com/nicholasestevao/Jogo-OrgComp" target="_blank" title="go to Jogo-OrgComp GitHub Repo">
                                             <span class="fa fa-book"></span>
                                         </a>
                                     </div>
@@ -403,7 +403,7 @@
                                     <span>This project involves an assembly game designed for the ICMC processor, created as part of the Computer Organization and Architecture (SSC0902) course taught by Professor Eduardo do Valle Simões.</span>
                                 </div>
                                 <div class="project-cards__footer">
-                                    <a href="https://github.com/nicholasestevao/Jogo-OrgComp" target="_blank">
+                                    <a href="https://github.com/nicholasestevao/Jogo-OrgComp" target="_blank" title="go to Jogo-OrgComp GitHub Repo">
                                         <span class="fa fa-code"></span>
                                         <span>go to repo</span>
                                     </a>
@@ -414,7 +414,7 @@
                             <div class="project-cards">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
-                                        <a href="https://github.com/ISS2718" target="_blank">
+                                        <a href="https://github.com/ISS2718" target="_blank" title="go to Issac's GitHub">
                                             <span class="fa fa-book"></span>
                                         </a>
                                     </div>
@@ -493,7 +493,7 @@
                                     <span>In my GitHub profile, you'll find a variety of projects employing different tools and technologies.</span>
                                 </div>
                                 <div class="project-cards__footer">
-                                    <a href="https://github.com/ISS2718" target="_blank">
+                                    <a href="https://github.com/ISS2718" target="_blank" title="go to Isaac's GitHub">
                                         <span class="fa fa-brands fa-github-alt"></span>
                                         <span>go to my GitHub</span>
                                     </a>
@@ -512,7 +512,7 @@
                             <label for="project-card-7" id="project-card-7-label"></label>
                         </nav>
                     </div>
-                    <button id="project-right-button"><span class="fa fa-angle-right"></span></button>
+                    <button id="project-right-button" aria-label="next project"><span class="fa fa-angle-right"></span></button>
                 </div>
             </section>
 
@@ -529,13 +529,13 @@
                     </div>
                 </div>
                 <div class="section__content">
-                    <button id="contribution-left-button"><span class="fa fa-angle-left"></span></button>
+                    <button id="contribution-left-button" aria-label="previous contribution"><span class="fa fa-angle-left"></span></button>
                     <div class="project-cards__carousel-limit">
                         <!-- Project Cards Carousel Inputs -->
-                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-1" checked="">
-                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-2">
-                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-3">
-                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-4">
+                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-1" checked="" aria-label="">
+                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-2" aria-label="">
+                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-3" aria-label="">
+                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-4" aria-label="">
 
                         <!-- Cotnribution Cards Carousel -->
                         <div class="project-cards-carousel">
@@ -543,7 +543,7 @@
                             <div class="project-cards">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
-                                        <a href="https://github.com/lucasgpulcinelli/goICMCsim" target="_blank">
+                                        <a href="https://github.com/lucasgpulcinelli/goICMCsim" target="_blank" title="go to goICMCsim GitHub Repo">
                                             <span class="fa fa-book"></span>
                                         </a>
                                     </div>
@@ -567,7 +567,7 @@
                                     <span>goICMCsim is a simulator for the ICMC architecture. I contributed by transferring the terminal errors into Error Dialogs, assisting in the modification of the file opening window, enhancing the visual identity of the program, and initiating documentation for the program.</span>
                                 </div>
                                 <div style="margin-top: 10px;" class="project-cards__footer">
-                                    <a href="https://github.com/lucasgpulcinelli/goICMCsim" target="_blank">
+                                    <a href="https://github.com/lucasgpulcinelli/goICMCsim" target="_blank" title="go to goICMCsim GitHub Repo">
                                         <span class="fa fa-code"></span>
                                         <span>go to repo</span>
                                     </a>
@@ -578,7 +578,7 @@
                             <div class="project-cards">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
-                                        <a href="https://github.com/ikuyorih9/Faltei" target="_blank">
+                                        <a href="https://github.com/ikuyorih9/Faltei" target="_blank" title="go to Faltei GitHub Repo">
                                             <span class="fa fa-book"></span>
                                         </a>
                                     </div>
@@ -610,7 +610,7 @@
                                     <span>An Android application developed in Android Studio to track attendance for a school/college course. I contributed by testing, making minor modifications, and providing suggestions.</span>
                                 </div>
                                 <div class="project-cards__footer">
-                                    <a href="https://github.com/ikuyorih9/Faltei" target="_blank">
+                                    <a href="https://github.com/ikuyorih9/Faltei" target="_blank" title="go to Faltei GitHub Repo">
                                         <span class="fa fa-code"></span>
                                         <span>go to repo</span>
                                     </a>
@@ -621,7 +621,7 @@
                             <div class="project-cards">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
-                                        <a href="https://github.com/simoesusp/Processador-ICMC" target="_blank">
+                                        <a href="https://github.com/simoesusp/Processador-ICMC" target="_blank" title="go to Processador-ICMC GitHub Repo">
                                             <span class="fa fa-book"></span>
                                         </a>
                                     </div>
@@ -669,7 +669,7 @@
                                     <span>This project involves the development of a comprehensive environment for teaching and learning computer architecture, VHDL processor design, and Assembly language. I contributed by creating an Assembly function to display a number of up to 16 bits (the size of a register) on the screen.</span>
                                 </div>
                                 <div style="margin-top: 15px;" class="project-cards__footer">
-                                    <a href="https://github.com/simoesusp/Processador-ICMC" target="_blank">
+                                    <a href="https://github.com/simoesusp/Processador-ICMC" target="_blank" title="go to Processador-ICMC GitHub Repo">
                                         <span class="fa fa-code"></span>
                                         <span>go to repo</span>
                                     </a>
@@ -680,7 +680,7 @@
                             <div class="project-cards">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
-                                        <a href="https://github.com/ISS2718" target="_blank">
+                                        <a href="https://github.com/ISS2718" target="_blank" title="go to Isaac's GitHub">
                                             <span class="fa fa-book"></span>
                                         </a>
                                     </div>
@@ -759,7 +759,7 @@
                                     <span>In my GitHub profile, you'll find a variety of projects I've contributed to, employing different tools and technologies.</span>
                                 </div>
                                 <div class="project-cards__footer">
-                                    <a href="https://github.com/ISS2718" target="_blank">
+                                    <a href="https://github.com/ISS2718" target="_blank" title="go to Isaac's GitHub">
                                         <span class="fa fa-brands fa-github-alt"></span>
                                         <span>go to my GitHub</span>
                                     </a>
@@ -775,12 +775,12 @@
                             <label for="contributions-card-4" id="contributions-card-4-label"></label>
                         </nav>
                     </div>
-                    <button id="contribution-right-button"><span class="fa fa-angle-right"></span></button>
+                    <button id="contribution-right-button" aria-label="next contribution"><span class="fa fa-angle-right"></span></button>
                 </div>
             </section>
 
             <div class="footer-default footer-mobile">
-                <a href="https://github.com/ISS2718/ISS2718.github.io" target="_blank">
+                <a href="https://github.com/ISS2718/ISS2718.github.io" target="_blank" title="go to ISS2718.github.io GitHub Repo">
                     <span class="fa fa-copyright"></span>
                     <span>2024 Isaac Soares</span>
                 </a>
@@ -789,7 +789,7 @@
 
     </main>
     <footer class="footer-default footer-desktop">
-        <a href="https://github.com/ISS2718/ISS2718.github.io" target="_blank">
+        <a href="https://github.com/ISS2718/ISS2718.github.io" target="_blank" title="go to ISS2718.github.io GitHub Repo">
             <span class="fa fa-copyright"></span>
             <span>2024 Isaac Soares</span>
         </a>

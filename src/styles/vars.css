@@ -28,69 +28,68 @@
     --color-scroll-bar-hovered: #d9d9d9d5;
 
     /* BODY SIZES */
-    --margin-top-screen: 90px;
-
+    --margin-top-screen: 5.625rem;
+    
     /* SIDE BAR SIZES */
-    --sidebar-width: 500px;
-    --sidebar-img-width: 300px;
-    --sidebar-img-height: 300px;
-    --sidebar-img-border-size:  5px;
+    --sidebar-width: 31.25rem;
+    --sidebar-img-width: 18.75rem;
+    --sidebar-img-height: 18.75rem;
+    --sidebar-img-border-size: 0.3125rem;
     --siddebar-h1-font-size: 2rem;
     --siddebar-h2-font-size: 1.5rem;
-
+    
     /* "MACOS" VISUALISER SCROLL SIZE */
-    --macOS-visualiser-scroll-height: 564px;
-
-
+    --macOS-visualiser-scroll-height: 35.25rem;
+    
     /* "MACOS" WINDOW SIZES */
-    --macOS-window-width: 600px;
-    --macOS-window-border-radius: 10px;
-
+    --macOS-window-width: 37.5rem;
+    --macOS-window-border-radius: 0.625rem;
+    
     /* "MACOS" WINDOW HEADER SIZES */
-    --macOS-window-header-margin: 10px 0;
-    --macOS-window-header-pading: 0 10px;
+    --macOS-window-header-margin: 0.625rem 0;
+    --macOS-window-header-pading: 0 0.625rem;
     --macOS-window-header-title-font-size: 1.15rem;
     --macOS-window-header-title-font-weight: 700;
-    --macOS-window-header-title-width: 522px;
-
+    --macOS-window-header-title-width: 32.625rem;
+    
     /* "MACOS" WINDOW CONTENT  SIZES */
-    --macOS-window-content-width: 580px;
-    --macOS-window-content-height: 430px;
+    --macOS-window-content-width: 36.25rem;
+    --macOS-window-content-height: 26.875rem;
     
     /* PROJECT CARD CAROUSEL SIZES*/
-    --project-cards-carousel-limit-width: 441.6px;
-    --project-cards-carousel-limit-height: 430px;
+    --project-cards-carousel-limit-width: 27.6rem;
+    --project-cards-carousel-limit-height: 26.875rem;
     --projet-cards-carousel-width: 700%; /* 7 cards */
     --project-cards-carousel-height: 100%; /* 1 card */
-    --project-cards-carousel-nav-width: 442px;
-    --project-cards-carousel-nav-height: 20px;
-    --project-cards-carousel-nav-bar-width: 45px;
-    --project-cards-carousel-nav-bar-height: 6px;
-    --project-cards-carousel-button-width: 30px;
-    --project-cards-carousel-button-height: 30px;
-
+    --project-cards-carousel-nav-width: 27.625rem;
+    --project-cards-carousel-nav-height: 1.25rem;
+    --project-cards-carousel-nav-bar-width: 2.8125rem;
+    --project-cards-carousel-nav-bar-height: 0.375rem;
+    --project-cards-carousel-button-width: 1.875rem;
+    --project-cards-carousel-button-height: 1.875rem;
+    
     /* PROJECT CARD SIZES*/
-    --project-cards-width: 440px;
-    --project-cards-height: 405px;
-    --project-cards-border-radius: 10px;
+    --project-cards-width: 27.5rem;
+    --project-cards-height: 25.3125rem;
+    --project-cards-border-radius: 0.625rem;
     --project-cards-title-font-size: 200%;
-
+    
     /* PROJECT CARDS TECHS IMG SIZES*/
-    --project-cards-techs-icon-height: 18px;
-    --project-cards-techs-icon-width: 18px;
+    --project-cards-techs-icon-height: 1.125rem;
+    --project-cards-techs-icon-width: 1.125rem;
     
     /* PROJECT CARDS TITLE SIZES*/
     --project-cards-title-width: 100%;
-    --project-cards-title-height: 145px;
-
+    --project-cards-title-height: 9.0625rem;
+    
     /* PROJECT CARDS IMG  SIZES*/
-    --project-cards-img-width: 330px;
-    --project-cards-img-height: 170px;
-    --project-cards-img-border-radius: 10px;
-
+    --project-cards-img-width: 20.625rem;
+    --project-cards-img-height: 10.625rem;
+    --project-cards-img-border-radius: 0.625rem;
+    
     /* HAMBURGUER MENU SIZES */
-    --ham-menu-margin: 15px 20px;
-    --ham-menu-icon-size: 30px;
+    --ham-menu-margin: 0.9375rem 1.25rem;
+    --ham-menu-icon-size: 1.875rem;
     --ham-menu-icon-width: var(--ham-menu-icon-size);
     --ham-menu-icon-height: var(--ham-menu-icon-size);
 }
