@@ -39,8 +39,13 @@
 
     <!-- Links de Scripts -->
     <script src="./src/scripts/carrousel_buttons.js" defer></script>
+    <script src="./src/scripts/gliders.js" defer></script>
     <script src="./src/scripts/ham_menu_scroll.js" defer></script>
     <script src="./src/scripts/section_indicators.js" defer></script>
+
+    <!-- Glider JS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js" defer></script>
 </head>
 <body>
     <header>
@@ -151,19 +156,9 @@
                     </div>
                 </div>
                 <div class="section__content">
-                    <button id="project-left-button" aria-label="previous project"><span class="fa fa-angle-left"></span></button>
-                    <div class="project-cards__carousel-limit">
-                        <!-- Project Cards Carousel Inputs -->
-                        <input type="radio" name="project-cards-carousel" id="project-card-1" checked="" aria-label="">
-                        <input type="radio" name="project-cards-carousel" id="project-card-2" aria-label="">
-                        <input type="radio" name="project-cards-carousel" id="project-card-3" aria-label="">
-                        <input type="radio" name="project-cards-carousel" id="project-card-4" aria-label="">
-                        <input type="radio" name="project-cards-carousel" id="project-card-5" aria-label="">
-                        <input type="radio" name="project-cards-carousel" id="project-card-6" aria-label="">
-                        <input type="radio" name="project-cards-carousel" id="project-card-7" aria-label="">
-
-                        <!-- Project Cards Carousel -->
-                        <div class="project-cards-carousel">
+                    <!-- Project Cards Carousel -->
+                    <div class="glider-contain">
+                        <div class="glider glider-limit">
                             <!-- LiveChat Project Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -198,7 +193,7 @@
                                     </a>
                                 </div>
                             </div>
-
+    
                             <!-- Space Invaders Project Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -233,7 +228,7 @@
                                     </a>
                                 </div>
                             </div>
-
+    
                             <!-- SpotClone Project Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -276,7 +271,7 @@
                                     </a>
                                 </div>
                             </div>
-
+    
                             <!-- Whisper.Driver Project Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -315,7 +310,7 @@
                                     </a>
                                 </div>
                             </div>
-
+    
                             <!-- Certification_NLW Project Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -358,7 +353,7 @@
                                     </a>
                                 </div>
                             </div>
-
+    
                             <!-- Mestre Cuca Project Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -379,23 +374,23 @@
                                         <svg role="img" style="width: 25px; height: 25px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
                                         width="96.000000pt" height="96.000000pt" viewBox="0 0 96.000000 96.000000"
                                         preserveAspectRatio="xMidYMid meet">
-                                           <title>Assembly</title>
-                                           <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
-                                           stroke="none">
-                                               <path d="M174 668 c-55 -95 -99 -180 -99 -188 0 -8 44 -93 99 -188 l98 -172
-                                               208 0 208 0 101 174 c56 96 101 180 101 186 0 6 -45 90 -101 186 l-101 174
-                                               -208 0 -208 0 -98 -172z m183 -183 c38 -115 39 -118 16 -113 -9 2 -21 18 -25
-                                               36 -8 28 -13 32 -43 32 -30 0 -37 -5 -49 -35 -13 -30 -36 -49 -36 -29 0 12 53
-                                               179 62 197 20 38 41 13 75 -88z m167 94 c36 -17 22 -30 -23 -23 -46 7 -71 -14
-                                               -46 -40 9 -9 22 -16 29 -16 7 0 25 -9 40 -21 57 -45 16 -118 -60 -106 -42 7
-                                               -69 26 -55 40 5 5 17 4 30 -3 33 -17 75 -9 79 16 2 16 -5 25 -28 34 -76 32
-                                               -98 72 -60 110 22 22 57 26 94 9z m112 -53 l21 -59 17 62 c13 48 21 61 37 61
-                                               19 0 20 -6 17 -107 -2 -74 -7 -108 -15 -111 -10 -3 -13 17 -14 75 l0 78 -17
-                                               -44 c-23 -59 -38 -62 -54 -9 l-13 43 -5 -69 c-3 -43 -10 -71 -17 -74 -10 -3
-                                               -13 23 -13 108 0 101 2 111 18 108 11 -2 25 -25 38 -62z"/>
-                                               <path d="M292 521 c-18 -50 -15 -61 13 -61 28 0 29 9 11 60 l-13 34 -11 -33z"/>
-                                           </g>
-                                       </svg>      
+                                            <title>Assembly</title>
+                                            <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                            stroke="none">
+                                                <path d="M174 668 c-55 -95 -99 -180 -99 -188 0 -8 44 -93 99 -188 l98 -172
+                                                208 0 208 0 101 174 c56 96 101 180 101 186 0 6 -45 90 -101 186 l-101 174
+                                                -208 0 -208 0 -98 -172z m183 -183 c38 -115 39 -118 16 -113 -9 2 -21 18 -25
+                                                36 -8 28 -13 32 -43 32 -30 0 -37 -5 -49 -35 -13 -30 -36 -49 -36 -29 0 12 53
+                                                179 62 197 20 38 41 13 75 -88z m167 94 c36 -17 22 -30 -23 -23 -46 7 -71 -14
+                                                -46 -40 9 -9 22 -16 29 -16 7 0 25 -9 40 -21 57 -45 16 -118 -60 -106 -42 7
+                                                -69 26 -55 40 5 5 17 4 30 -3 33 -17 75 -9 79 16 2 16 -5 25 -28 34 -76 32
+                                                -98 72 -60 110 22 22 57 26 94 9z m112 -53 l21 -59 17 62 c13 48 21 61 37 61
+                                                19 0 20 -6 17 -107 -2 -74 -7 -108 -15 -111 -10 -3 -13 17 -14 75 l0 78 -17
+                                                -44 c-23 -59 -38 -62 -54 -9 l-13 43 -5 -69 c-3 -43 -10 -71 -17 -74 -10 -3
+                                                -13 23 -13 108 0 101 2 111 18 108 11 -2 25 -25 38 -62z"/>
+                                                <path d="M292 521 c-18 -50 -15 -61 13 -61 28 0 29 9 11 60 l-13 34 -11 -33z"/>
+                                            </g>
+                                        </svg>      
                                     </div>
                                 </div>
                                 <div class="project-cards__about">
@@ -409,7 +404,7 @@
                                     </a>
                                 </div>
                             </div>
-
+    
                             <!-- Go to GitHub Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -500,19 +495,19 @@
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Project Cards Carousel Navigation -->
-                        <nav class="project-cards-carousel__nav">
-                            <label for="project-card-1" id="project-card-1-label"></label>
-                            <label for="project-card-2" id="project-card-2-label"></label>
-                            <label for="project-card-3" id="project-card-3-label"></label>
-                            <label for="project-card-4" id="project-card-4-label"></label>
-                            <label for="project-card-5" id="project-card-5-label"></label>
-                            <label for="project-card-6" id="project-card-6-label"></label>
-                            <label for="project-card-7" id="project-card-7-label"></label>
-                        </nav>
+                      
+                        <button aria-label="Previous" class="glider-prev"><span class="fa fa-angle-left"></span></button>
+                        <button aria-label="Next" class="glider-next"><span class="fa fa-angle-right"></span></button>
+                        <div role="tablist" id="project-nav-bars" class="dots">
+                            <button data-index="0" aria-label="Page 1" role="tab" class="glider-dot"></button>
+                            <button data-index="1" aria-label="Page 2" role="tab" class="glider-dot"></button>
+                            <button data-index="2" aria-label="Page 3" role="tab" class="glider-dot"></button>
+                            <button data-index="3" aria-label="Page 4" role="tab" class="glider-dot"></button>
+                            <button data-index="4" aria-label="Page 5" role="tab" class="glider-dot"></button>
+                            <button data-index="5" aria-label="Page 6" role="tab" class="glider-dot"></button>
+                            <button data-index="6" aria-label="Page 7" role="tab" class="glider-dot"></button>
+                        </div>
                     </div>
-                    <button id="project-right-button" aria-label="next project"><span class="fa fa-angle-right"></span></button>
                 </div>
             </section>
 
@@ -528,17 +523,10 @@
                         <span>Contributions</span>
                     </div>
                 </div>
-                <div class="section__content">
-                    <button id="contribution-left-button" aria-label="previous contribution"><span class="fa fa-angle-left"></span></button>
-                    <div class="project-cards__carousel-limit">
-                        <!-- Project Cards Carousel Inputs -->
-                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-1" checked="" aria-label="">
-                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-2" aria-label="">
-                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-3" aria-label="">
-                        <input type="radio" name="contributions-cards-carousel" id="contributions-card-4" aria-label="">
-
-                        <!-- Cotnribution Cards Carousel -->
-                        <div class="project-cards-carousel">
+                <div class="section__content">                    
+                    <!-- Cotnribution Cards Carousel -->
+                    <div class="glider-contain">
+                        <div class="glider glider-limit">
                             <!-- goICMCsim Cotnribution Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -573,7 +561,7 @@
                                     </a>
                                 </div>
                             </div>
-
+    
                             <!-- Faltei Cotnribution Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -616,7 +604,7 @@
                                     </a>
                                 </div>
                             </div>
-
+    
                             <!-- ICMC Processor Cotnribution Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -637,24 +625,24 @@
                                         <svg role="img" style="width: 25px; height: 25px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
                                         width="96.000000pt" height="96.000000pt" viewBox="0 0 96.000000 96.000000"
                                         preserveAspectRatio="xMidYMid meet">
-                                           <title>Assembly</title>
-                                           <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
-                                           stroke="none">
-                                               <path d="M174 668 c-55 -95 -99 -180 -99 -188 0 -8 44 -93 99 -188 l98 -172
-                                               208 0 208 0 101 174 c56 96 101 180 101 186 0 6 -45 90 -101 186 l-101 174
-                                               -208 0 -208 0 -98 -172z m183 -183 c38 -115 39 -118 16 -113 -9 2 -21 18 -25
-                                               36 -8 28 -13 32 -43 32 -30 0 -37 -5 -49 -35 -13 -30 -36 -49 -36 -29 0 12 53
-                                               179 62 197 20 38 41 13 75 -88z m167 94 c36 -17 22 -30 -23 -23 -46 7 -71 -14
-                                               -46 -40 9 -9 22 -16 29 -16 7 0 25 -9 40 -21 57 -45 16 -118 -60 -106 -42 7
-                                               -69 26 -55 40 5 5 17 4 30 -3 33 -17 75 -9 79 16 2 16 -5 25 -28 34 -76 32
-                                               -98 72 -60 110 22 22 57 26 94 9z m112 -53 l21 -59 17 62 c13 48 21 61 37 61
-                                               19 0 20 -6 17 -107 -2 -74 -7 -108 -15 -111 -10 -3 -13 17 -14 75 l0 78 -17
-                                               -44 c-23 -59 -38 -62 -54 -9 l-13 43 -5 -69 c-3 -43 -10 -71 -17 -74 -10 -3
-                                               -13 23 -13 108 0 101 2 111 18 108 11 -2 25 -25 38 -62z"/>
-                                               <path d="M292 521 c-18 -50 -15 -61 13 -61 28 0 29 9 11 60 l-13 34 -11 -33z"/>
-                                           </g>
-                                       </svg>   
-                                       <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <title>Assembly</title>
+                                            <g transform="translate(0.000000,96.000000) scale(0.100000,-0.100000)"
+                                            stroke="none">
+                                                <path d="M174 668 c-55 -95 -99 -180 -99 -188 0 -8 44 -93 99 -188 l98 -172
+                                                208 0 208 0 101 174 c56 96 101 180 101 186 0 6 -45 90 -101 186 l-101 174
+                                                -208 0 -208 0 -98 -172z m183 -183 c38 -115 39 -118 16 -113 -9 2 -21 18 -25
+                                                36 -8 28 -13 32 -43 32 -30 0 -37 -5 -49 -35 -13 -30 -36 -49 -36 -29 0 12 53
+                                                179 62 197 20 38 41 13 75 -88z m167 94 c36 -17 22 -30 -23 -23 -46 7 -71 -14
+                                                -46 -40 9 -9 22 -16 29 -16 7 0 25 -9 40 -21 57 -45 16 -118 -60 -106 -42 7
+                                                -69 26 -55 40 5 5 17 4 30 -3 33 -17 75 -9 79 16 2 16 -5 25 -28 34 -76 32
+                                                -98 72 -60 110 22 22 57 26 94 9z m112 -53 l21 -59 17 62 c13 48 21 61 37 61
+                                                19 0 20 -6 17 -107 -2 -74 -7 -108 -15 -111 -10 -3 -13 17 -14 75 l0 78 -17
+                                                -44 c-23 -59 -38 -62 -54 -9 l-13 43 -5 -69 c-3 -43 -10 -71 -17 -74 -10 -3
+                                                -13 23 -13 108 0 101 2 111 18 108 11 -2 25 -25 38 -62z"/>
+                                                <path d="M292 521 c-18 -50 -15 -61 13 -61 28 0 29 9 11 60 l-13 34 -11 -33z"/>
+                                            </g>
+                                        </svg>   
+                                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                             <title>C</title>
                                             <path d="M16.5921 9.1962s-.354-3.298-3.627-3.39c-3.2741-.09-4.9552 2.474-4.9552 6.14 0 3.6651 1.858 6.5972 5.0451 6.5972 3.184 0 3.5381-3.665 3.5381-3.665l6.1041.365s.36 3.31-2.196 5.836c-2.552 2.5241-5.6901 2.9371-7.8762 2.9201-2.19-.017-5.2261.034-8.1602-2.97-2.938-3.0101-3.436-5.9302-3.436-8.8002 0-2.8701.556-6.6702 4.047-9.5502C7.444.72 9.849 0 12.254 0c10.0422 0 10.7172 9.2602 10.7172 9.2602z"/>
                                         </svg>
@@ -675,7 +663,7 @@
                                     </a>
                                 </div>
                             </div>
-
+    
                             <!-- Go to GitHub Card -->
                             <div class="project-cards">
                                 <div class="project-cards__header">
@@ -766,16 +754,17 @@
                                 </div>
                             </div>
                         </div>
+                      
+                        <button aria-label="Previous" class="glider-prev"><span class="fa fa-angle-left"></span></button>
+                        <button aria-label="Next" class="glider-next"><span class="fa fa-angle-right"></span></button>
 
-                        <!-- Project Cards Carousel Navigation -->
-                        <nav class="project-cards-carousel__nav">
-                            <label for="contributions-card-1" id="contributions-card-1-label"></label>
-                            <label for="contributions-card-2" id="contributions-card-2-label"></label>
-                            <label for="contributions-card-3" id="contributions-card-3-label"></label>
-                            <label for="contributions-card-4" id="contributions-card-4-label"></label>
-                        </nav>
+                        <div role="tablist" id="contribution-nav-bars" class="dots">
+                            <button data-index="0" aria-label="Page 1" role="tab" class="glider-dot"></button>
+                            <button data-index="1" aria-label="Page 2" role="tab" class="glider-dot"></button>
+                            <button data-index="2" aria-label="Page 3" role="tab" class="glider-dot"></button>
+                            <button data-index="3" aria-label="Page 4" role="tab" class="glider-dot"></button>
+                        </div>
                     </div>
-                    <button id="contribution-right-button" aria-label="next contribution"><span class="fa fa-angle-right"></span></button>
                 </div>
             </section>
 
