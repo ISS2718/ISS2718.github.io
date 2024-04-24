@@ -38,7 +38,9 @@
     <script src="https://kit.fontawesome.com/8e753354fb.js" crossorigin="anonymous"></script>
 
     <!-- Links de Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
     <script src="./src/scripts/carrousel_buttons.js" defer></script>
+    <script src="./src/scripts/carrousel_limit_resize.js" defer></script>
     <script src="./src/scripts/ham_menu_scroll.js" defer></script>
     <script src="./src/scripts/section_indicators.js" defer></script>
 </head>
@@ -152,7 +154,7 @@
                 </div>
                 <div class="section__content">
                     <button id="project-left-button" aria-label="previous project"><span class="fa fa-angle-left"></span></button>
-                    <div class="project-cards__carousel-limit">
+                    <div class="project-cards__carousel-limit" id="ProjectCard-Limit">
                         <!-- Project Cards Carousel Inputs -->
                         <input type="radio" name="project-cards-carousel" id="project-card-1" checked="" aria-label="">
                         <input type="radio" name="project-cards-carousel" id="project-card-2" aria-label="">
@@ -165,7 +167,7 @@
                         <!-- Project Cards Carousel -->
                         <div class="project-cards-carousel">
                             <!-- LiveChat Project Card -->
-                            <div class="project-cards">
+                            <div class="project-cards" id="LiveChat-ProjectCard">
                                 <div class="project-cards__header">
                                     <div class="project-cards__header-repo-icon">
                                         <a href="https://github.com/ISS2718/LiveChat" target="_blank" title="go to LiveChat GitHub Repo">
